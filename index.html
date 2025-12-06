@@ -3,16 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikita Lorusso | Sviluppatore & Designer per Imprenditori</title>
-    <meta name="description" content="Non il solito sviluppatore. Nikita Lorusso crea siti web e identità digitali per imprenditori che vogliono risultati concreti.">
     
+    <!-- SEO OTTIMIZZATO PER CONVERSANO E BARI -->
+    <title>Nikita Lorusso | Web Design & Grafica a Conversano e Bari</title>
+    <meta name="description" content="Cerchi un Grafico o Web Designer a Conversano e Bari? Nikita Lorusso realizza siti web professionali, loghi e brand identity per aziende in Puglia.">
+    <meta name="keywords" content="Graphic Design Conversano, Web Design Conversano, Grafico Conversano, Realizzazione Siti Web Bari, Logo Design Puglia, Nikita Lorusso">
+    <meta name="author" content="Nikita Lorusso">
+    <meta name="geo.region" content="IT-BA" />
+    <meta name="geo.placename" content="Conversano" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nikitalorusso.com/">
+    <meta property="og:title" content="Nikita Lorusso | Web Design & Grafica a Conversano">
+    <meta property="og:description" content="Sviluppo siti web e grafica pubblicitaria per aziende a Conversano, Bari e provincia.">
+    
+    <!-- Dati Strutturati JSON-LD per Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Nikita Lorusso Web & Graphic Design",
+      "image": "https://www.nikitalorusso.com/logo.png",
+      "@id": "https://www.nikitalorusso.com",
+      "url": "https://www.nikitalorusso.com",
+      "telephone": "+393347716561",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Conversano",
+        "addressRegion": "BA",
+        "postalCode": "70014",
+        "addressCountry": "IT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.9676,
+        "longitude": 17.1158
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "priceRange": "€€"
+    }
+    </script>
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Fonts: 'Oswald' (Impatto) & 'Outfit' (Modernità e Leggibilità Umana) -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Oswald:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
@@ -28,11 +78,11 @@
                     },
                     colors: {
                         brand: {
-                            accent: '#FF4D00',   // Arancione Internazionale (Energia, Creatività, Business)
-                            dark: '#0f0f0f',     // Nero Carbone (Caldo, non nero assoluto)
-                            light: '#f4f4f4',    // Bianco Carta (Riposante)
-                            gray: '#1a1a1a',     // Grigio Scuro per sezioni
-                            text: '#333333'      // Grigio per testo su chiaro
+                            accent: '#FF4D00',
+                            dark: '#0f0f0f',
+                            light: '#f4f4f4',
+                            gray: '#1a1a1a',
+                            text: '#333333'
                         }
                     },
                     animation: {
@@ -51,56 +101,13 @@
 
     <style>
         body { cursor: default; }
-        
-        /* Smooth Reveal */
-        .reveal {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Hover Effect sulle Card */
-        .project-card {
-            transition: transform 0.4s ease;
-        }
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-        .project-card:hover .project-img {
-            transform: scale(1.05);
-            filter: grayscale(0%);
-        }
-        .project-img {
-            transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            filter: grayscale(100%);
-        }
-
-        /* Text Highlight Effect */
-        .highlight {
-            position: relative;
-            z-index: 1;
-        }
-        .highlight::after {
-            content: '';
-            position: absolute;
-            bottom: 2px;
-            left: -2px;
-            right: -2px;
-            height: 12px;
-            background-color: rgba(255, 77, 0, 0.2);
-            z-index: -1;
-            transform: skewX(-10deg);
-        }
-
-        ::selection {
-            background-color: #FF4D00;
-            color: white;
-        }
-        
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 1s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .project-card { transition: transform 0.4s ease; }
+        .project-card:hover { transform: translateY(-5px); }
+        .project-card:hover .project-img { transform: scale(1.05); filter: grayscale(0%); }
+        .project-img { transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); filter: grayscale(100%); }
+        ::selection { background-color: #FF4D00; color: white; }
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #fff; }
         ::-webkit-scrollbar-thumb { background: #333; }
@@ -118,7 +125,7 @@
 
             <div class="hidden md:flex items-center space-x-12 text-sm font-bold uppercase tracking-widest text-gray-500">
                 <a href="#progetti" class="hover:text-brand-dark transition-colors">Clienti</a>
-                <a href="#valore" class="hover:text-brand-dark transition-colors">Perché Io</a>
+                <a href="#valore" class="hover:text-brand-dark transition-colors">Servizi</a>
                 <a href="#prodotti" class="hover:text-brand-dark transition-colors">Software</a>
                 <a href="#contatti" class="hover:text-brand-accent transition-colors">Contatti</a>
             </div>
@@ -132,19 +139,17 @@
             </button>
         </div>
 
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="fixed inset-0 bg-brand-dark z-40 flex flex-col items-center justify-center space-y-8 opacity-0 pointer-events-none transition-opacity duration-300">
             <button id="menu-close" class="absolute top-8 right-8 text-3xl text-white"><i class="fas fa-times"></i></button>
             <a href="#progetti" class="text-4xl font-display font-bold text-white mobile-link">LAVORI</a>
-            <a href="#valore" class="text-4xl font-display font-bold text-white mobile-link">PERCHÉ IO</a>
+            <a href="#valore" class="text-4xl font-display font-bold text-white mobile-link">SERVIZI</a>
             <a href="#prodotti" class="text-4xl font-display font-bold text-white mobile-link">SOFTWARE</a>
             <a href="#contatti" class="text-4xl font-display font-bold text-brand-accent mobile-link">CONTATTAMI</a>
         </div>
     </nav>
 
-    <!-- Hero Section: Impatto e Fiducia -->
+    <!-- Hero Section -->
     <header class="relative pt-40 pb-20 px-6 md:px-12 min-h-screen flex items-center justify-center bg-brand-light">
-        <!-- Decorazione Grafica -->
         <div class="absolute top-0 right-0 w-1/3 h-full bg-gray-100 skew-x-12 origin-top transform translate-x-32 hidden lg:block"></div>
         
         <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-16 items-center relative z-10">
@@ -152,34 +157,32 @@
             <div class="lg:col-span-7 order-2 lg:order-1 reveal">
                 <div class="inline-flex items-center gap-3 px-4 py-2 border border-brand-dark/10 bg-white rounded-full shadow-sm mb-8">
                     <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
-                    <span class="text-brand-dark text-xs font-bold uppercase tracking-[0.2em]">Disponibile per nuovi progetti</span>
+                    <span class="text-brand-dark text-xs font-bold uppercase tracking-[0.2em]">Web Designer Conversano & Bari</span>
                 </div>
                 
                 <h1 class="text-5xl sm:text-6xl md:text-8xl font-display font-bold leading-[0.95] mb-8 text-brand-dark uppercase">
-                    Non faccio solo siti. <br>
-                    Costruisco <span class="text-brand-accent italic font-serif lowercase">business.</span>
+                    Graphic & Web <br>
+                    <span class="text-brand-accent italic font-serif lowercase">Design.</span>
                 </h1>
                 
                 <p class="text-xl text-gray-600 font-light leading-relaxed max-w-xl mb-10 border-l-4 border-brand-accent pl-6">
-                    Se cerchi il "cugino che fa i siti", non sono io. <br>
-                    Se cerchi un partner strategico che unisca <strong>design impeccabile</strong> e <strong>codice performante</strong> per farti vendere di più, sei nel posto giusto.
+                    Realizzo siti web, loghi e strategie digitali per aziende a <strong>Conversano, Bari e provincia</strong>. Trasformo la tua attività locale in un brand digitale forte.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#progetti" class="px-8 py-4 bg-brand-dark text-white font-bold text-sm tracking-widest uppercase hover:bg-brand-accent transition-all shadow-xl text-center">
-                        Guarda cosa so fare
+                        I Miei Lavori
                     </a>
                     <a href="#contatti" class="px-8 py-4 border border-brand-dark text-brand-dark font-bold text-sm tracking-widest uppercase hover:bg-white transition-all text-center">
-                        Parliamo del tuo progetto
+                        Parla con un esperto
                     </a>
                 </div>
             </div>
 
-            <!-- Immagine/Concept -->
             <div class="lg:col-span-5 order-1 lg:order-2 relative reveal" style="transition-delay: 200ms;">
                 <div class="relative z-10 bg-white p-2 shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 border border-gray-100">
                     <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
-                         alt="Nikita Lorusso al lavoro" 
+                         alt="Nikita Lorusso Web Designer Conversano" 
                          class="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700">
                     <div class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur p-4 border-l-4 border-brand-accent">
                         <p class="font-display font-bold text-lg">Nikita Lorusso</p>
@@ -191,11 +194,11 @@
         </div>
     </header>
 
-    <!-- Marquee (Stile Boccuzzi) -->
+    <!-- Marquee -->
     <div class="bg-brand-dark py-6 overflow-hidden relative border-y border-gray-800">
         <div class="whitespace-nowrap animate-marquee flex gap-12 text-white/20 font-display font-bold text-6xl uppercase tracking-tighter">
-            <span>Strategia</span> • <span>Design</span> • <span>Sviluppo</span> • <span>Branding</span> • <span>Performance</span> • <span>SEO</span> •
-            <span>Strategia</span> • <span>Design</span> • <span>Sviluppo</span> • <span>Branding</span> • <span>Performance</span> • <span>SEO</span> •
+            <span>Conversano</span> • <span>Bari</span> • <span>Siti Web</span> • <span>Loghi</span> • <span>E-Commerce</span> • <span>SEO</span> •
+            <span>Conversano</span> • <span>Bari</span> • <span>Siti Web</span> • <span>Loghi</span> • <span>E-Commerce</span> • <span>SEO</span> •
         </div>
     </div>
 
@@ -205,19 +208,19 @@
             <div class="grid md:grid-cols-2 gap-20 items-start">
                 <div class="reveal sticky top-32">
                     <h2 class="text-4xl md:text-6xl font-display font-bold text-brand-dark mb-8 leading-[0.95]">
-                        PERCHÉ SCEGLIERE <br> <span class="text-brand-accent">UN ARTIGIANO?</span>
+                        PERCHÉ SCEGLIERE <br> <span class="text-brand-accent">UN PRO?</span>
                     </h2>
                     <p class="text-lg text-gray-600 leading-relaxed mb-8">
-                        Le agenzie sono lente e costose. I template pronti sono uguali per tutti e lenti.
+                        Sei un imprenditore di Conversano o Bari? Non affidare la tua immagine al caso.
                     </p>
                     <p class="text-lg text-gray-600 leading-relaxed mb-8">
-                        Io offro il meglio dei due mondi: <strong>la qualità di un'agenzia premium</strong> con la <strong>velocità e l'attenzione personale</strong> di un freelance esperto. Non sei un numero, sei un progetto che curo personalmente.
+                        Io offro il meglio dei due mondi: <strong>la qualità di un'agenzia premium</strong> con la <strong>vicinanza e l'attenzione</strong> di un professionista locale. Conosco il territorio e so come far crescere le aziende pugliesi online.
                     </p>
                     
                     <ul class="space-y-4 mt-8 font-bold text-brand-dark">
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-brand-accent"></i> Nessun intermediario, parli con chi lavora.</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-brand-accent"></i> Codice proprietario, niente "copia-incolla".</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-brand-accent"></i> Tempi di consegna certi.</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-brand-accent"></i> Supporto locale e diretto.</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-brand-accent"></i> Design su misura, no template lenti.</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-brand-accent"></i> Ottimizzazione SEO Locale inclusa.</li>
                     </ul>
                 </div>
 
@@ -225,25 +228,25 @@
                     <!-- Card 1 -->
                     <div class="p-10 bg-gray-50 border border-gray-100 hover:bg-brand-dark hover:text-white transition-all group">
                         <span class="text-4xl font-display font-bold text-brand-accent mb-4 block">01</span>
-                        <h3 class="text-2xl font-bold mb-3">Sviluppo Sartoriale</h3>
+                        <h3 class="text-2xl font-bold mb-3">Siti Web che Convertono</h3>
                         <p class="text-sm leading-relaxed opacity-80">
-                            Non uso "costruttori" pesanti. Scrivo codice pulito che piace a Google. Il risultato? Siti che si caricano in un lampo e si posizionano meglio.
+                            Non creo solo vetrine. Realizzo strumenti di vendita. Siti veloci, sicuri e progettati per trasformare i visitatori in clienti reali per la tua attività.
                         </p>
                     </div>
                     <!-- Card 2 -->
                     <div class="p-10 bg-gray-50 border border-gray-100 hover:bg-brand-dark hover:text-white transition-all group">
                         <span class="text-4xl font-display font-bold text-brand-accent mb-4 block">02</span>
-                        <h3 class="text-2xl font-bold mb-3">Brand Identity Reale</h3>
+                        <h3 class="text-2xl font-bold mb-3">Graphic Design & Loghi</h3>
                         <p class="text-sm leading-relaxed opacity-80">
-                            Un logo da 50€ si vede. Io creo identità visive che raccontano la tua storia e giustificano i tuoi prezzi. Colori, font e stile coordinati.
+                            L'immagine è tutto. Progetto loghi memorabili e identità visive coordinate (biglietti da visita, menu, social) per distinguerti dalla concorrenza locale.
                         </p>
                     </div>
                     <!-- Card 3 -->
                     <div class="p-10 bg-gray-50 border border-gray-100 hover:bg-brand-dark hover:text-white transition-all group">
                         <span class="text-4xl font-display font-bold text-brand-accent mb-4 block">03</span>
-                        <h3 class="text-2xl font-bold mb-3">Strategia, non solo Grafica</h3>
+                        <h3 class="text-2xl font-bold mb-3">Posizionamento Google (SEO)</h3>
                         <p class="text-sm leading-relaxed opacity-80">
-                            Un sito bello che non converte è inutile. Analizzo il tuo mercato per creare percorsi che trasformano i visitatori in clienti paganti.
+                            Fatti trovare da chi cerca i tuoi servizi a Conversano e Bari. Ottimizzo il tuo sito per scalare le classifiche di ricerca locale.
                         </p>
                     </div>
                 </div>
@@ -257,7 +260,7 @@
             <div class="flex flex-col md:flex-row justify-between items-end mb-24 reveal">
                 <div>
                     <h2 class="text-4xl md:text-6xl font-display font-bold text-brand-dark mb-2">Cosa ho costruito</h2>
-                    <p class="text-gray-500 font-medium">Progetti reali, risultati reali.</p>
+                    <p class="text-gray-500 font-medium">Casi di successo reali.</p>
                 </div>
             </div>
 
@@ -268,17 +271,17 @@
                     <div class="md:col-span-8 relative overflow-hidden shadow-2xl border border-gray-200 bg-white p-2">
                         <div class="aspect-[16/9] bg-gray-100 overflow-hidden relative">
                             <img src="https://ambasciatoridelgusto.it/wp-content/uploads/2023/07/Boccuzzi-Domenico-10.2022-2-scaled-uai-1280x1707.jpg" 
-                                 alt="Domenico Boccuzzi" 
+                                 alt="Sito Web Domenico Boccuzzi Conversano" 
                                  class="project-img w-full h-full object-cover object-top">
                         </div>
                     </div>
                     <div class="md:col-span-4">
-                        <span class="text-brand-accent font-bold text-xs uppercase tracking-[0.2em] mb-4 block">Personal Branding</span>
+                        <span class="text-brand-accent font-bold text-xs uppercase tracking-[0.2em] mb-4 block">Web Design Conversano</span>
                         <h3 class="text-5xl font-display font-bold text-brand-dark mb-6 group-hover:text-brand-accent transition-colors leading-none">
                             Domenico <br> Boccuzzi
                         </h3>
                         <p class="text-gray-600 text-lg leading-relaxed mb-8">
-                            Ho trasformato l'immagine di un ristoratore in quella di un imprenditore visionario. Un sito che parla di valori, non solo di menù.
+                            Ho trasformato l'immagine digitale di un noto imprenditore di Conversano. Un sito web che comunica eccellenza e professionalità.
                         </p>
                         <span class="inline-block border-b border-brand-dark pb-1 text-xs font-bold uppercase tracking-widest group-hover:text-brand-accent group-hover:border-brand-accent transition-all">Vedi il sito</span>
                     </div>
@@ -288,16 +291,16 @@
                 <a href="https://www.luminariatravel.it" target="_blank" class="project-card grid md:grid-cols-12 gap-12 items-center reveal group cursor-pointer block">
                     <div class="md:col-span-8 md:order-2 relative overflow-hidden shadow-2xl border border-gray-200 bg-white p-2">
                         <div class="aspect-[16/9] bg-gray-100 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Luminaria Travel" class="project-img w-full h-full object-cover">
+                            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Sito Web Turismo Puglia" class="project-img w-full h-full object-cover">
                         </div>
                     </div>
                     <div class="md:col-span-4 md:order-1 md:text-right">
-                        <span class="text-brand-dark font-bold text-xs uppercase tracking-[0.2em] mb-4 block">Travel Industry</span>
+                        <span class="text-brand-dark font-bold text-xs uppercase tracking-[0.2em] mb-4 block">Travel & Tourism</span>
                         <h3 class="text-5xl font-display font-bold text-brand-dark mb-6 group-hover:text-brand-accent transition-colors leading-none">
                             Luminaria <br> Travel
                         </h3>
                         <p class="text-gray-600 text-lg leading-relaxed mb-8">
-                            Ristrutturazione completa per un portale turistico. Ho reso il sito veloce, intuitivo ed emozionale, aumentando le richieste di preventivo.
+                            Restyling completo per un portale turistico pugliese. Ho reso il sito veloce e intuitivo, ottimizzato per attirare turisti in Puglia.
                         </p>
                         <span class="inline-block border-b border-brand-dark pb-1 text-xs font-bold uppercase tracking-widest group-hover:text-brand-accent group-hover:border-brand-accent transition-all">Vedi il sito</span>
                     </div>
@@ -308,17 +311,17 @@
                     <div class="md:col-span-8 relative overflow-hidden shadow-2xl border border-gray-200 bg-white p-2">
                         <div class="aspect-[16/9] overflow-hidden relative flex items-center justify-center p-12 bg-white">
                             <img src="https://www.cucinaconmegraziellaeraffaele.it/wp-content/uploads/2025/05/CUCINA-CON-ME-270-x-90-px.png" 
-                                 alt="Cucina con Me Logo" 
+                                 alt="Logo Design Food Blog" 
                                  class="project-img w-auto h-auto max-h-[70%] max-w-[90%] object-contain">
                         </div>
                     </div>
                     <div class="md:col-span-4">
-                        <span class="text-brand-dark font-bold text-xs uppercase tracking-[0.2em] mb-4 block">Brand Identity</span>
+                        <span class="text-brand-dark font-bold text-xs uppercase tracking-[0.2em] mb-4 block">Logo Design</span>
                         <h3 class="text-5xl font-display font-bold text-brand-dark mb-6 group-hover:text-brand-accent transition-colors leading-none">
                             Cucina <br> con Me
                         </h3>
                         <p class="text-gray-600 text-lg leading-relaxed mb-8">
-                            Un nuovo volto per un blog di cucina. Ho creato un logo che unisce tradizione e modernità, rendendo il brand immediatamente riconoscibile sui social.
+                            Un nuovo volto per un blog di cucina. Ho creato un logo professionale che unisce tradizione e modernità.
                         </p>
                         <span class="inline-block border-b border-brand-dark pb-1 text-xs font-bold uppercase tracking-widest group-hover:text-brand-accent group-hover:border-brand-accent transition-all">Vedi il Blog</span>
                     </div>
@@ -333,8 +336,8 @@
         <div class="container mx-auto px-6 md:px-12 max-w-[1600px] relative z-10">
             <div class="flex flex-col md:flex-row justify-between items-end mb-24 reveal">
                 <div>
-                    <span class="text-brand-accent font-bold tracking-widest text-sm uppercase mb-2 block">Il Mio Software</span>
-                    <h2 class="text-4xl md:text-5xl font-display font-bold">Prodotti Proprietari</h2>
+                    <span class="text-brand-accent font-bold tracking-widest text-sm uppercase mb-2 block">Innovazione</span>
+                    <h2 class="text-4xl md:text-5xl font-display font-bold">Software Proprietari</h2>
                 </div>
             </div>
 
@@ -349,7 +352,7 @@
                             <span class="px-3 py-1 bg-brand-accent text-white rounded-full text-[10px] font-bold uppercase tracking-widest">Web App</span>
                         </div>
                         <p class="text-gray-400 text-lg leading-relaxed mb-8">
-                            Non solo siti per clienti. Sviluppo anche software proprietari. CV Creator è la mia Web App avanzata per creare curriculum professionali in pochi minuti.
+                            Un esempio delle mie capacità di sviluppo avanzato. CV Creator è una Web App completa per creare curriculum professionali in PDF.
                         </p>
                         <span class="text-xs font-bold text-white uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
                             Prova la Demo <i class="fas fa-arrow-right text-brand-accent"></i>
@@ -367,8 +370,8 @@
                 LAVORIAMO <br> <span class="text-brand-accent">INSIEME.</span>
             </h2>
             <p class="text-xl text-gray-500 mb-12 font-light leading-relaxed max-w-2xl mx-auto">
-                Non rimandare il successo del tuo progetto. <br>
-                Contattami oggi per una consulenza gratuita.
+                Sei pronto a far crescere la tua attività a Conversano o Bari? <br>
+                Contattami per una consulenza gratuita.
             </p>
             
             <div class="flex flex-col items-center gap-8 mb-16">
@@ -389,13 +392,12 @@
             </div>
 
             <div class="mt-24 pt-8 border-t border-gray-100 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">
-                &copy; 2025 Nikita Lorusso. Tutti i diritti riservati.
+                &copy; 2025 Nikita Lorusso. Sviluppo Web & Grafica Conversano.
             </div>
         </div>
     </footer>
 
     <script>
-        // Animazione Scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -407,7 +409,6 @@
 
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        // Menu Mobile
         const menuBtn = document.getElementById('menu-btn');
         const menuClose = document.getElementById('menu-close');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -430,3 +431,5 @@
     </script>
 </body>
 </html>
+
+
