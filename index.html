@@ -79,7 +79,7 @@
                     },
                     colors: {
                         brand: {
-                            accent: '#FF3300',   // Rosso/Arancio Vibrante
+                            accent: '#FF3300',   // Rosso/Arancio Vibrante (Action Color)
                             dark: '#0f0f0f',     // Nero Profondo
                             light: '#ffffff',    // Bianco Assoluto
                             surface: '#f9f9f9',  // Grigio Pietra Chiarissimo
@@ -114,7 +114,7 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Texture GRAIN CSS */
+        /* Texture GRAIN CSS (Leggera texture per qualità percepita) */
         .bg-grain {
             position: fixed;
             top: 0;
@@ -180,7 +180,7 @@
         <div class="max-w-[1600px] mx-auto flex justify-between items-center">
             <!-- Logo -->
             <a href="#" class="text-xl md:text-2xl font-display font-bold tracking-tight text-brand-dark uppercase group relative z-50">
-                Nikita Lorusso<span class="text-brand-accent group-hover:text-brand-dark transition-colors">.</span>
+                Nikita Lorusso<span class="text-brand-accent group-hover:text-black transition-colors">.</span>
             </a>
 
             <!-- Desktop Menu -->
@@ -252,15 +252,14 @@
             <!-- Immagine Personale / Locale -->
             <div class="lg:col-span-5 order-1 lg:order-2 relative reveal w-full max-w-md mx-auto" style="transition-delay: 100ms;">
                 <div class="relative bg-white p-3 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500 border border-brand-border">
-                    <!-- NOTA: Sostituisci questo link con una TUA foto reale o una foto bella di Conversano/Puglia -->
-                    <img src="https://images.unsplash.com/photo-1540575339264-569259387a45?q=80&w=800&auto=format&fit=crop" 
+                    <img src="Nikita_Lorusso_Design.jpeg" 
                          alt="Nikita Lorusso Web Designer Conversano Bari" 
                          class="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700"
                          width="600" height="800"
                          loading="eager">
                     <div class="pt-4 px-3 pb-2 text-center">
-                        <p class="font-display font-bold text-xl text-brand-dark uppercase mb-1">Conversano (BA)</p>
-                        <p class="text-[10px] uppercase tracking-[0.2em] text-brand-accent font-bold">Base Operativa</p>
+                        <p class="font-display font-bold text-xl text-brand-dark uppercase mb-1">Nikita Lorusso</p>
+                        <p class="text-[10px] uppercase tracking-[0.2em] text-brand-accent font-bold">Creative Developer</p>
                     </div>
                 </div>
                 <!-- Elemento decorativo -->
@@ -522,22 +521,8 @@
         </div>
     </section>
 
-    <!-- Chi Sono / About Breve -->
-    <section id="about" class="py-24 px-6 md:px-12 bg-white border-b border-gray-100">
-        <div class="container mx-auto max-w-4xl text-center reveal">
-            <h2 class="text-3xl md:text-4xl font-display font-bold text-brand-dark mb-8">Non un'agenzia, ma un Partner</h2>
-            <p class="text-lg text-gray-600 leading-loose mb-8 font-light">
-                Le grandi agenzie hanno costi alti e tempi lunghi. I "cugini" improvvisati non garantiscono risultati. 
-                Io offro il meglio dei due mondi: <strong>la qualità di un'agenzia premium</strong> con l'<strong>agilità e i costi di un professionista indipendente</strong>.
-            </p>
-            <div class="inline-block px-4 py-2 bg-brand-gray rounded-lg border border-brand-border text-xs font-bold uppercase tracking-widest text-brand-dark">
-                Supporto Diretto &bull; Nessun Intermediario
-            </div>
-        </div>
-    </section>
-
     <!-- Footer / Contatti -->
-    <footer id="contatti" class="py-24 md:py-32 px-6 md:px-12 bg-white">
+    <footer id="contatti" class="py-24 md:py-32 px-6 md:px-12 bg-white border-t border-gray-200">
         <div class="container mx-auto px-6 max-w-6xl reveal">
             <div class="grid md:grid-cols-2 gap-16 lg:gap-24 items-start">
                 
