@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO PERFORMANTE: LOCALE + NAZIONALE -->
-    <title>Nikita Lorusso | Sviluppo Web & Branding | Conversano - Bari - Italia</title>
-    <meta name="description" content="Nikita Lorusso crea siti web veloci e identità visive uniche. Web Designer a Conversano (Bari), operativo in tutta Italia. Richiedi un preventivo diretto.">
-    <meta name="keywords" content="Siti Web Conversano, Web Designer Bari, Realizzazione E-commerce Italia, Brand Identity, Nikita Lorusso, Sviluppatore Web Freelance, SEO Locale Puglia">
+    <!-- SEO STRATEGICO: LOCALE + NAZIONALE (Focus Siti Vetrina & Grafica) -->
+    <title>Nikita Lorusso | Siti Web & Graphic Design | Conversano - Italia</title>
+    <meta name="description" content="Nikita Lorusso: Web Designer e Grafico a Conversano. Realizzo siti vetrina, loghi, brochure e brand identity per professionisti in Puglia e in tutta Italia.">
+    <meta name="keywords" content="Siti Web Vetrina Conversano, Grafico Pubblicitario Bari, Logo Design, Biglietti da Visita, Brand Identity, Landing Page, Nikita Lorusso, Web Design Italia">
     <meta name="author" content="Nikita Lorusso">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#FF4500">
+    <meta name="theme-color" content="#FF3300">
     
-    <!-- Geo-Targeting -->
+    <!-- Geo-Targeting (Base a Conversano, Operativo Ovunque) -->
     <meta name="geo.region" content="IT-BA" />
     <meta name="geo.placename" content="Conversano" />
     <meta name="geo.position" content="40.9676;17.1158" />
@@ -21,11 +21,11 @@
     <!-- Open Graph -->
     <meta property="og:type" content="business.business">
     <meta property="og:url" content="https://www.nikitalorusso.com/">
-    <meta property="og:title" content="Nikita Lorusso - Web Design Sartoriale">
-    <meta property="og:description" content="Siti web che distinguono il tuo brand. Servizi di design e strategia digitale.">
+    <meta property="og:title" content="Nikita Lorusso - Web & Graphics">
+    <meta property="og:description" content="Siti web che distinguono il tuo brand e grafica pubblicitaria professionale.">
     <meta property="og:image" content="https://www.nikitalorusso.com/og-image.jpg">
     
-    <!-- JSON-LD: Schema Ibrido (Local + Online) -->
+    <!-- JSON-LD: Schema Aggiornato -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -48,11 +48,17 @@
         { "@type": "City", "name": "Conversano" },
         { "@type": "City", "name": "Bari" },
         { "@type": "Country", "name": "Italy" }
+      ],
+      "knowsAbout": ["Web Design", "Graphic Design", "Logo Design", "SEO", "Brand Identity"],
+      "sameAs": [
+        "https://www.instagram.com/nikita_lorusso/",
+        "https://it.linkedin.com/in/nikita-lorusso-273375223",
+        "https://github.com/nikita-a11y"
       ]
     }
     </script>
 
-    <!-- Tailwind CSS (CDN per sviluppo rapido, in produzione usare build) -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Font Awesome -->
@@ -73,16 +79,18 @@
                     },
                     colors: {
                         brand: {
-                            accent: '#FF4500',   // Orange Red (High Energy)
-                            dark: '#0f0f0f',     // Nero Matte
-                            light: '#ffffff',    // Bianco
-                            surface: '#f4f4f5',  // Grigio Pietra
-                            text: '#18181b'      // Antracite
+                            accent: '#FF3300',   // Rosso/Arancio Vibrante (Action Color)
+                            dark: '#0f0f0f',     // Nero Profondo
+                            light: '#ffffff',    // Bianco Assoluto
+                            surface: '#f9f9f9',  // Grigio Pietra Chiarissimo
+                            text: '#1f1f1f',     // Antracite Scuro
+                            border: '#e5e5e5'    // Bordi
                         }
                     },
                     animation: {
-                        'marquee': 'marquee 30s linear infinite',
+                        'marquee': 'marquee 40s linear infinite',
                         'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                     },
                     keyframes: {
                         marquee: {
@@ -100,13 +108,13 @@
     </script>
 
     <style>
-        /* Ottimizzazione Performance Rendering */
+        /* Ottimizzazione Rendering */
         body { 
             text-rendering: optimizeLegibility;
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Texture GRAIN CSS (Senza immagini esterne = Più veloce) */
+        /* Texture GRAIN CSS (Leggera texture per qualità percepita) */
         .bg-grain {
             position: fixed;
             top: 0;
@@ -130,60 +138,60 @@
             transform: translateY(0);
         }
 
-        /* Sezioni off-screen non renderizzate (Boost Performance) */
-        section {
-            content-visibility: auto;
-            contain-intrinsic-size: 800px;
-        }
-
         /* Hover Effects */
         .hover-lift {
             transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
         }
         .hover-lift:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.08);
         }
 
         /* Input Focus */
         input:focus, select:focus, textarea:focus {
-            border-color: #FF4500;
-            box-shadow: 0 0 0 2px rgba(255, 69, 0, 0.1);
+            border-color: #FF3300;
+            box-shadow: 0 0 0 2px rgba(255, 51, 0, 0.1);
             outline: none;
         }
 
         /* Selection Color */
-        ::selection { background-color: #FF4500; color: white; }
+        ::selection { background-color: #FF3300; color: white; }
         
         /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #fff; }
         ::-webkit-scrollbar-thumb { background: #d4d4d8; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #FF4500; }
+        ::-webkit-scrollbar-thumb:hover { background: #FF3300; }
+        
+        /* Mobile Specifics */
+        @media (max-width: 768px) {
+            .mobile-padding { padding-left: 1.5rem; padding-right: 1.5rem; }
+        }
     </style>
 </head>
 <body class="bg-brand-light text-brand-text antialiased overflow-x-hidden">
 
-    <!-- Texture per look Premium -->
+    <!-- Texture di sfondo -->
     <div class="bg-grain"></div>
 
-    <!-- Navbar Sticky -->
-    <nav class="fixed w-full z-40 top-0 left-0 py-4 px-6 md:px-12 bg-white/90 backdrop-blur-lg border-b border-gray-100 transition-all duration-300">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-40 top-0 left-0 py-4 px-6 md:px-12 bg-white/95 backdrop-blur-lg border-b border-gray-100 transition-all duration-300">
         <div class="max-w-[1600px] mx-auto flex justify-between items-center">
             <!-- Brand -->
-            <a href="#" class="text-2xl font-display font-bold tracking-tight text-brand-dark uppercase group relative z-50">
+            <a href="#" class="text-xl md:text-2xl font-display font-bold tracking-tight text-brand-dark uppercase group relative z-50">
                 Nikita Lorusso<span class="text-brand-accent group-hover:text-black transition-colors">.</span>
             </a>
 
             <!-- Desktop Menu -->
             <div class="hidden lg:flex items-center space-x-12 text-xs font-bold uppercase tracking-[0.15em] text-gray-500">
-                <a href="#portfolio" class="hover:text-brand-dark transition-colors relative group">Portfolio<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-accent transition-all group-hover:w-full"></span></a>
+                <a href="#progetti" class="hover:text-brand-dark transition-colors relative group">Portfolio<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-accent transition-all group-hover:w-full"></span></a>
                 <a href="#servizi" class="hover:text-brand-dark transition-colors relative group">Servizi<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-accent transition-all group-hover:w-full"></span></a>
                 <a href="#metodo" class="hover:text-brand-dark transition-colors relative group">Metodo<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-accent transition-all group-hover:w-full"></span></a>
+                <a href="#about" class="hover:text-brand-dark transition-colors relative group">Chi Sono<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-accent transition-all group-hover:w-full"></span></a>
             </div>
 
             <!-- CTA -->
-            <a href="#contatti" class="hidden lg:inline-block px-8 py-3 bg-brand-dark text-white text-xs font-bold uppercase tracking-[0.15em] hover:bg-brand-accent transition-all duration-300 transform hover:-translate-y-0.5 shadow-xl hover:shadow-brand-accent/20">
+            <a href="#contatti" class="hidden lg:inline-block px-8 py-3 bg-brand-dark text-white text-xs font-bold uppercase tracking-[0.15em] hover:bg-brand-accent transition-all duration-300 transform hover:-translate-y-0.5 rounded-sm shadow-lg">
                 Contattami
             </a>
 
@@ -196,17 +204,18 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-8 opacity-0 pointer-events-none transition-opacity duration-300">
             <button id="menu-close" class="absolute top-6 right-6 text-4xl text-brand-dark p-4"><i class="fas fa-times"></i></button>
-            <a href="#portfolio" class="text-5xl font-display font-bold text-brand-dark hover:text-brand-accent transition mobile-link">LAVORI</a>
-            <a href="#servizi" class="text-5xl font-display font-bold text-brand-dark hover:text-brand-accent transition mobile-link">SERVIZI</a>
-            <a href="#metodo" class="text-5xl font-display font-bold text-brand-dark hover:text-brand-accent transition mobile-link">METODO</a>
-            <a href="#contatti" class="text-5xl font-display font-bold text-brand-accent mobile-link border-b-4 border-brand-accent pb-2">CONTATTI</a>
+            <a href="#progetti" class="text-4xl font-display font-bold text-brand-dark hover:text-brand-accent transition mobile-link">LAVORI</a>
+            <a href="#servizi" class="text-4xl font-display font-bold text-brand-dark hover:text-brand-accent transition mobile-link">SERVIZI</a>
+            <a href="#metodo" class="text-4xl font-display font-bold text-brand-dark hover:text-brand-accent transition mobile-link">METODO</a>
+            <a href="#about" class="text-4xl font-display font-bold text-brand-dark hover:text-brand-accent transition mobile-link">CHI SONO</a>
+            <a href="#contatti" class="text-4xl font-display font-bold text-brand-accent mobile-link border-b-2 border-brand-accent pb-1">CONTATTAMI</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6 md:px-12 min-h-[90vh] flex items-center justify-center bg-brand-light overflow-hidden">
         <!-- Decorazione Sfondo -->
-        <div class="absolute top-0 right-0 w-[40%] h-full bg-gray-100 skew-x-12 origin-top transform translate-x-1/4 hidden lg:block -z-10"></div>
+        <div class="absolute top-0 right-0 w-[40%] h-full bg-gray-50 skew-x-12 origin-top transform translate-x-1/4 hidden lg:block -z-10"></div>
         
         <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-12 lg:gap-20 items-center relative z-10">
             
@@ -214,26 +223,26 @@
                 <!-- Tagline Locale + Nazionale -->
                 <div class="inline-flex items-center gap-3 mb-6 justify-center lg:justify-start bg-white px-4 py-2 rounded-full border border-gray-200 shadow-sm">
                     <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                    <h1 class="text-gray-500 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em]">Web Design Conversano & Tutta Italia</h1>
+                    <h1 class="text-gray-500 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em]">Siti Web & Grafica • Conversano & Italia</h1>
                 </div>
                 
-                <div class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.95] mb-8 text-brand-dark uppercase tracking-tight">
-                    Il tuo Brand <br>
+                <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.95] mb-8 text-brand-dark uppercase tracking-tight">
+                    Design che <br>
                     <span class="text-brand-accent relative inline-block">
-                        Merita di più.
+                        Funziona.
                         <svg class="absolute w-full h-4 -bottom-1 left-0 text-brand-accent opacity-20" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="3" fill="none" /></svg>
                     </span>
-                </div>
+                </h1>
                 
                 <p class="text-lg md:text-xl text-gray-600 font-light leading-relaxed max-w-xl mb-10 border-l-4 border-brand-accent pl-6 mx-auto lg:mx-0">
-                    Sono <strong>Nikita Lorusso</strong>. Aiuto imprenditori locali e nazionali a trasformare i visitatori in clienti. Siti web veloci, SEO strategica e Design che vende.
+                    Sono <strong>Nikita Lorusso</strong>. Aiuto professionisti e aziende a costruire un'identità forte. Dal sito web al logo, curo ogni dettaglio per farti vendere di più.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <a href="#portfolio" class="px-8 py-4 bg-brand-dark text-white font-bold text-xs tracking-[0.15em] uppercase hover:bg-brand-accent transition-all shadow-xl text-center rounded-sm hover:-translate-y-1">
-                        Guarda i Lavori
+                    <a href="#progetti" class="w-full sm:w-auto px-8 py-4 bg-brand-dark text-white font-bold text-xs tracking-[0.15em] uppercase hover:bg-brand-accent transition-all shadow-xl text-center rounded-sm hover:-translate-y-1">
+                        Vedi i Risultati
                     </a>
-                    <a href="#contatti" class="px-8 py-4 border border-brand-dark text-brand-dark font-bold text-xs tracking-[0.15em] uppercase hover:bg-white transition-all text-center rounded-sm bg-transparent">
+                    <a href="#contatti" class="w-full sm:w-auto px-8 py-4 border border-brand-dark text-brand-dark font-bold text-xs tracking-[0.15em] uppercase hover:bg-white transition-all text-center rounded-sm bg-transparent">
                         Preventivo Gratuito
                     </a>
                 </div>
@@ -243,13 +252,13 @@
             <div class="lg:col-span-5 order-1 lg:order-2 relative reveal w-full max-w-md mx-auto" style="transition-delay: 100ms;">
                 <div class="relative bg-white p-3 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500 border border-gray-100">
                     <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                         alt="Nikita Lorusso Sviluppatore Web Conversano" 
+                         alt="Nikita Lorusso Web Designer Conversano Bari" 
                          class="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700"
                          width="600" height="800"
                          loading="eager">
                     <div class="pt-4 px-3 pb-2 text-center">
                         <p class="font-display font-bold text-xl text-brand-dark uppercase mb-1">Nikita Lorusso</p>
-                        <p class="text-[10px] uppercase tracking-[0.2em] text-brand-accent font-bold">Digital Partner</p>
+                        <p class="text-[10px] uppercase tracking-[0.2em] text-brand-accent font-bold">Creative Developer</p>
                     </div>
                 </div>
             </div>
@@ -259,67 +268,128 @@
     <!-- Marquee Infinito -->
     <div class="bg-brand-dark py-5 overflow-hidden border-y border-gray-800 rotate-1 scale-105 transform origin-left">
         <div class="whitespace-nowrap animate-marquee flex gap-16 text-white/20 font-display font-bold text-3xl md:text-5xl uppercase tracking-tighter">
-            <span>Conversano</span> <span>Bari</span> <span>Siti Web Veloci</span> <span>Branding</span> <span>Italia</span> <span>SEO Locale</span> <span>E-Commerce</span>
-            <span>Conversano</span> <span>Bari</span> <span>Siti Web Veloci</span> <span>Branding</span> <span>Italia</span> <span>SEO Locale</span> <span>E-Commerce</span>
+            <span>Siti Vetrina</span> <span>Branding</span> <span>Loghi</span> <span>Conversano</span> <span>Landing Page</span> <span>SEO Locale</span> <span>Bari</span>
+            <span>Siti Vetrina</span> <span>Branding</span> <span>Loghi</span> <span>Conversano</span> <span>Landing Page</span> <span>SEO Locale</span> <span>Bari</span>
         </div>
     </div>
 
-    <!-- Perché Conviene -->
-    <section id="valore" class="py-20 md:py-32 bg-white relative">
+    <!-- I Miei Servizi (DETTAGLIATI) -->
+    <section id="servizi" class="py-24 md:py-32 bg-brand-surface relative">
         <div class="container mx-auto px-6 md:px-12 max-w-[1600px]">
-            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-                <div class="reveal sticky top-32">
-                    <h2 class="text-4xl md:text-6xl font-display font-bold text-brand-dark mb-8 leading-[0.95]">
-                        PERCHÉ UN <br> <span class="text-brand-accent">FREELANCE?</span>
-                    </h2>
-                    <p class="text-lg text-gray-600 leading-relaxed mb-8 font-light">
-                        Le grandi agenzie sono lente e costose. I "cugini" improvvisati non portano risultati. Io sono la via di mezzo perfetta: <strong>qualità da agenzia premium</strong> con l'<strong>agilità e i costi</strong> di un professionista indipendente.
+            <div class="text-center mb-20 reveal">
+                <span class="text-brand-accent font-bold tracking-widest text-xs uppercase mb-4 block">Cosa Faccio</span>
+                <h2 class="text-3xl md:text-5xl font-display font-bold text-brand-dark mb-6">Soluzioni per il tuo Business</h2>
+                <p class="text-gray-500 text-lg max-w-2xl mx-auto font-light">
+                    Servizi professionali per chi vuole distinguersi. Niente template uguali per tutti.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1: Web -->
+                <div class="bg-white p-10 border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-accent/30 transition-all duration-300 reveal group">
+                    <div class="w-14 h-14 rounded-full bg-brand-accent/5 flex items-center justify-center mb-8 group-hover:bg-brand-accent transition-colors">
+                        <i class="fas fa-desktop text-2xl text-brand-accent group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-display uppercase tracking-wide mb-4 text-brand-dark">Siti Web Vetrina</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        Siti eleganti per presentare la tua azienda o i tuoi servizi. Ottimizzati per caricarsi all'istante su ogni cellulare e farsi trovare su Google.
                     </p>
-                    <ul class="space-y-5 font-bold text-brand-dark text-sm md:text-base tracking-wide uppercase">
-                        <li class="flex items-center gap-4"><i class="fas fa-check text-brand-accent"></i> Parli direttamente con chi lavora.</li>
-                        <li class="flex items-center gap-4"><i class="fas fa-check text-brand-accent"></i> SEO Locale inclusa nel prezzo.</li>
-                        <li class="flex items-center gap-4"><i class="fas fa-check text-brand-accent"></i> Consegna rapida e garantita.</li>
+                    <ul class="text-xs text-gray-500 space-y-2 uppercase tracking-wide">
+                        <li>• Portfolio & Blog</li>
+                        <li>• Siti Aziendali</li>
+                        <li>• Landing Page</li>
                     </ul>
                 </div>
 
-                <div class="grid gap-8 reveal" style="transition-delay: 200ms;">
-                    <!-- Bento Grid Services -->
-                    <div class="p-10 bg-brand-surface border border-gray-200 hover:border-brand-accent transition-all duration-300 group hover:shadow-xl rounded-sm">
-                        <span class="text-5xl font-display font-bold text-brand-accent/20 group-hover:text-brand-accent transition-colors block mb-6">01</span>
-                        <h3 class="text-2xl font-display font-bold mb-4 uppercase">Siti Web Vetrina</h3>
-                        <p class="text-sm leading-relaxed opacity-80 font-light">
-                            Strumenti di vendita, non semplici pagine. Veloci, sicuri e progettati per convertire visitatori in clienti paganti. Ideali per professionisti e attività locali.
-                        </p>
+                <!-- Service 2: Graphics -->
+                <div class="bg-white p-10 border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-accent/30 transition-all duration-300 reveal group" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 rounded-full bg-brand-accent/5 flex items-center justify-center mb-8 group-hover:bg-brand-accent transition-colors">
+                        <i class="fas fa-paint-brush text-2xl text-brand-accent group-hover:text-white"></i>
                     </div>
-                    
-                    <div class="p-10 bg-brand-surface border border-gray-200 hover:border-brand-accent transition-all duration-300 group hover:shadow-xl rounded-sm">
-                        <span class="text-5xl font-display font-bold text-brand-accent/20 group-hover:text-brand-accent transition-colors block mb-6">02</span>
-                        <h3 class="text-2xl font-display font-bold mb-4 uppercase">Brand Identity & Loghi</h3>
-                        <p class="text-sm leading-relaxed opacity-80 font-light">
-                            Un'immagine coordinata forte ti fa percepire come leader del settore. Creo loghi, palette colori e materiali grafici che restano impressi.
-                        </p>
-                    </div>
-                    
-                    <div class="p-10 bg-brand-surface border border-gray-200 hover:border-brand-accent transition-all duration-300 group hover:shadow-xl rounded-sm">
-                        <span class="text-5xl font-display font-bold text-brand-accent/20 group-hover:text-brand-accent transition-colors block mb-6">03</span>
-                        <h3 class="text-2xl font-display font-bold mb-4 uppercase">SEO & Posizionamento</h3>
-                        <p class="text-sm leading-relaxed opacity-80 font-light">
-                            Fatti trovare prima dei tuoi concorrenti. Strategie SEO locali per apparire nelle ricerche di chi cerca i tuoi servizi a Bari e provincia.
-                        </p>
-                    </div>
+                    <h3 class="text-xl font-bold font-display uppercase tracking-wide mb-4 text-brand-dark">Graphic Design</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        Non solo web. Curo la tua immagine anche offline. Creo materiale promozionale che attira l'attenzione e comunica professionalità.
+                    </p>
+                    <ul class="text-xs text-gray-500 space-y-2 uppercase tracking-wide">
+                        <li>• Biglietti da Visita</li>
+                        <li>• Brochure & Volantini</li>
+                        <li>• Menu Ristoranti</li>
+                    </ul>
                 </div>
+
+                <!-- Service 3: Branding -->
+                <div class="bg-white p-10 border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-accent/30 transition-all duration-300 reveal group" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 rounded-full bg-brand-accent/5 flex items-center justify-center mb-8 group-hover:bg-brand-accent transition-colors">
+                        <i class="fas fa-fingerprint text-2xl text-brand-accent group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-display uppercase tracking-wide mb-4 text-brand-dark">Brand Identity</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        Il logo è il volto della tua azienda. Ne creo uno unico, memorabile e adatto sia al web che alla stampa, definendo i colori del tuo successo.
+                    </p>
+                    <ul class="text-xs text-gray-500 space-y-2 uppercase tracking-wide">
+                        <li>• Logo Design</li>
+                        <li>• Restyling Logo</li>
+                        <li>• Immagine Coordinata</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4: Social -->
+                <div class="bg-white p-10 border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-accent/30 transition-all duration-300 reveal group">
+                    <div class="w-14 h-14 rounded-full bg-brand-accent/5 flex items-center justify-center mb-8 group-hover:bg-brand-accent transition-colors">
+                        <i class="fab fa-instagram text-2xl text-brand-accent group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-display uppercase tracking-wide mb-4 text-brand-dark">Grafica Social</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        I tuoi post devono spiccare nel feed. Realizzo template grafici per Instagram, Facebook e LinkedIn coerenti con il tuo brand.
+                    </p>
+                    <ul class="text-xs text-gray-500 space-y-2 uppercase tracking-wide">
+                        <li>• Post & Storie Instagram</li>
+                        <li>• Copertine Social</li>
+                        <li>• Banner Pubblicitari</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5: SEO -->
+                <div class="bg-white p-10 border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-accent/30 transition-all duration-300 reveal group" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 rounded-full bg-brand-accent/5 flex items-center justify-center mb-8 group-hover:bg-brand-accent transition-colors">
+                        <i class="fas fa-search-location text-2xl text-brand-accent group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-display uppercase tracking-wide mb-4 text-brand-dark">SEO Locale</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        Fatti trovare da chi cerca i tuoi servizi a Conversano, Bari e dintorni. Ottimizzo il sito per le ricerche locali su Google.
+                    </p>
+                    <ul class="text-xs text-gray-500 space-y-2 uppercase tracking-wide">
+                        <li>• Google My Business</li>
+                        <li>• Ottimizzazione Keyword</li>
+                        <li>• Velocizzazione Sito</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6: Restyling -->
+                <div class="bg-white p-10 border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-accent/30 transition-all duration-300 reveal group" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 rounded-full bg-brand-accent/5 flex items-center justify-center mb-8 group-hover:bg-brand-accent transition-colors">
+                        <i class="fas fa-sync-alt text-2xl text-brand-accent group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-display uppercase tracking-wide mb-4 text-brand-dark">Restyling</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        Hai un sito vecchio o lento? Lo rinnovo completamente mantenendo i contenuti ma aggiornando grafica e tecnologia agli standard 2025.
+                    </p>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="py-24 md:py-32 bg-brand-surface border-y border-gray-200">
+    <!-- Portfolio Clienti -->
+    <section id="progetti" class="py-24 md:py-32 bg-white relative border-t border-gray-200">
         <div class="container mx-auto px-6 md:px-12 max-w-[1600px]">
             <div class="flex flex-col md:flex-row justify-between items-end mb-20 md:mb-24 reveal">
                 <div>
-                    <span class="text-brand-accent font-bold tracking-widest text-xs uppercase mb-2 block">Casi Studio</span>
-                    <h2 class="text-4xl md:text-6xl font-display font-bold text-brand-dark">Progetti Recenti</h2>
+                    <h2 class="text-4xl md:text-6xl font-display font-bold text-brand-dark mb-2">Casi Studio</h2>
+                    <p class="text-gray-500 font-medium tracking-wide">Qualità che parla da sola.</p>
                 </div>
+                <div class="hidden md:block w-32 h-[1px] bg-brand-accent"></div>
             </div>
 
             <div class="space-y-24 md:space-y-32">
@@ -341,7 +411,7 @@
                             </div>
                             <h3 class="text-3xl md:text-5xl font-display font-bold text-brand-dark mb-4 md:mb-6 uppercase leading-none">Domenico <br> Boccuzzi</h3>
                             <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-8 font-light">
-                                Personal branding e sito web per un imprenditore leader nella ristorazione. Strategia digitale volta ad aumentare l'autorevolezza e attrarre partnership.
+                                Sito web sartoriale per un imprenditore leader nella ristorazione. Strategia digitale volta ad aumentare l'autorevolezza e attrarre partnership.
                             </p>
                             <span class="inline-block border-b border-brand-dark pb-1 text-xs font-bold uppercase tracking-widest group-hover:text-brand-accent group-hover:border-brand-accent transition-all">Visita il sito</span>
                         </div>
@@ -397,6 +467,52 @@
         </div>
     </section>
 
+    <!-- Metodo & Processo -->
+    <section id="metodo" class="py-24 md:py-32 bg-brand-dark text-white relative overflow-hidden">
+        <div class="container mx-auto px-6 md:px-12 max-w-7xl relative z-10">
+            <div class="text-center mb-20 reveal">
+                <span class="text-brand-accent font-bold tracking-widest text-xs uppercase mb-4 block">Come Lavoro</span>
+                <h2 class="text-3xl md:text-5xl font-display font-bold mb-6">Il Metodo "Zero Stress"</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto font-light">Un processo collaudato per portare risultati, senza perdite di tempo.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12 md:gap-16 text-left">
+                <!-- Step 1 -->
+                <div class="reveal group border-t border-white/10 pt-8 hover:border-brand-accent transition-colors">
+                    <span class="text-6xl font-display font-bold text-white/10 mb-6 block group-hover:text-brand-accent transition-colors">01</span>
+                    <h3 class="text-2xl font-bold mb-4 font-display uppercase tracking-wide">Analisi</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm font-light">
+                        Studio la tua attività e i tuoi concorrenti. Definiamo insieme obiettivi chiari e un preventivo trasparente.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="reveal group border-t border-white/10 pt-8 hover:border-brand-accent transition-colors" style="transition-delay: 100ms;">
+                    <span class="text-6xl font-display font-bold text-white/10 mb-6 block group-hover:text-brand-accent transition-colors">02</span>
+                    <h3 class="text-2xl font-bold mb-4 font-display uppercase tracking-wide">Sviluppo</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm font-light">
+                        Creo il design e sviluppo il sito. Ti tengo aggiornato passo dopo passo.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="reveal group border-t border-white/10 pt-8 hover:border-brand-accent transition-colors" style="transition-delay: 200ms;">
+                    <span class="text-6xl font-display font-bold text-white/10 mb-6 block group-hover:text-brand-accent transition-colors">03</span>
+                    <h3 class="text-2xl font-bold mb-4 font-display uppercase tracking-wide">Lancio</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm font-light">
+                        Il sito va online, ottimizzato per Google. Ti insegno a gestirlo o me ne occupo io per te.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-24 text-center reveal">
+                <a href="#contatti" class="inline-flex items-center gap-3 border-b border-brand-accent pb-1 text-brand-accent font-bold uppercase tracking-widest hover:text-white transition-colors text-sm">
+                    Inizia il tuo progetto <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer / Contatti -->
     <footer id="contatti" class="py-24 md:py-32 px-6 md:px-12 bg-white border-t border-gray-200">
         <div class="container mx-auto px-6 max-w-6xl reveal">
@@ -408,67 +524,80 @@
                         PARLIAMO DEL <br> <span class="text-brand-accent">TUO FUTURO.</span>
                     </h2>
                     <p class="text-lg md:text-xl text-gray-600 mb-10 font-light leading-relaxed">
-                        Hai un'attività a Conversano, Bari o in Italia? Non lasciare spazio ai concorrenti. Contattami per un preventivo gratuito e senza impegno.
+                        Hai un'attività locale o un brand nazionale? <br>
+                        Contattami per una consulenza gratuita.
                     </p>
                     
                     <div class="space-y-6">
-                        <!-- MAILTO DIRETTO -->
-                        <a href="mailto:nikitalorusso68@gmail.com" class="flex items-center gap-4 text-lg md:text-xl font-bold text-brand-dark hover:text-brand-accent transition-colors break-all">
-                            <span class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-gray-200 flex items-center justify-center text-brand-accent flex-shrink-0">
+                        <a href="mailto:nikitalorusso68@gmail.com" class="flex items-center gap-4 text-lg md:text-xl font-bold text-brand-dark hover:text-brand-accent transition-colors break-all group">
+                            <span class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-gray-200 flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition-all flex-shrink-0">
                                 <i class="far fa-envelope"></i>
                             </span>
                             nikitalorusso68@gmail.com
                         </a>
-                        <!-- TEL DIRETTO -->
                         <a href="tel:+393347716561" class="flex items-center gap-4 text-lg md:text-xl font-bold text-brand-dark hover:text-brand-accent transition-colors group">
-                            <span class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-gray-200 flex items-center justify-center text-brand-accent flex-shrink-0">
+                            <span class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-gray-200 flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition-all flex-shrink-0">
                                 <i class="fas fa-phone-alt"></i>
                             </span>
                             +39 334 771 6561
                         </a>
                     </div>
 
-                    <div class="flex flex-wrap gap-4 md:gap-6 mt-10">
+                    <div class="flex flex-wrap gap-4 md:gap-6 mt-12">
                         <a href="https://www.instagram.com/nikita_lorusso/" target="_blank" class="text-gray-400 hover:text-brand-accent transition-colors text-2xl"><i class="fab fa-instagram"></i></a>
                         <a href="https://it.linkedin.com/in/nikita-lorusso-273375223" target="_blank" class="text-gray-400 hover:text-brand-accent transition-colors text-2xl"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/nikita-a11y" target="_blank" class="text-gray-400 hover:text-brand-accent transition-colors text-2xl"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
 
-                <!-- Modulo Semplice JS (Apre client di posta) -->
+                <!-- Modulo di Contatto (FormSubmit) -->
                 <div class="bg-brand-surface p-8 md:p-12 rounded-2xl border border-gray-100 shadow-xl">
-                    <form id="contactForm" class="space-y-6">
+                    <form action="https://formsubmit.co/nikitalorusso68@gmail.com" method="POST" class="space-y-6">
+                        <input type="hidden" name="_subject" value="Nuova richiesta dal sito web!">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://www.nikitalorusso.com/"> 
+
                         <div>
                             <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2 font-bold">Il tuo Nome</label>
-                            <input type="text" id="name" required class="w-full bg-white border border-gray-200 rounded-sm px-4 py-4 text-brand-dark focus:border-brand-accent focus:ring-1 focus:ring-brand-accent outline-none transition-all placeholder-gray-400" placeholder="Mario Rossi">
+                            <input type="text" name="name" required class="w-full bg-white border border-gray-200 rounded-sm px-4 py-4 text-brand-dark focus:border-brand-accent focus:ring-1 focus:ring-brand-accent outline-none transition-all placeholder-gray-400" placeholder="Mario Rossi">
                         </div>
                         <div>
                             <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2 font-bold">La tua Email</label>
-                            <input type="email" id="email" required class="w-full bg-white border border-gray-200 rounded-sm px-4 py-4 text-brand-dark focus:border-brand-accent focus:ring-1 focus:ring-brand-accent outline-none transition-all placeholder-gray-400" placeholder="mario@email.com">
+                            <input type="email" name="email" required class="w-full bg-white border border-gray-200 rounded-sm px-4 py-4 text-brand-dark focus:border-brand-accent focus:ring-1 focus:ring-brand-accent outline-none transition-all placeholder-gray-400" placeholder="mario@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2 font-bold">Cosa ti serve?</label>
+                            <select name="service" class="w-full bg-white border border-gray-200 rounded-sm px-4 py-4 text-brand-dark focus:border-brand-accent focus:ring-1 focus:ring-brand-accent outline-none transition-all appearance-none cursor-pointer">
+                                <option value="Sito Web Vetrina">Sito Web Vetrina</option>
+                                <option value="Landing Page">Landing Page per Vendita</option>
+                                <option value="Logo & Brand Identity">Logo & Brand Identity</option>
+                                <option value="Biglietti da Visita / Brochure">Grafica (Biglietti, Menu, Ecc.)</option>
+                                <option value="Restyling Sito">Restyling Sito Esistente</option>
+                                <option value="Altro">Altro progetto</option>
+                            </select>
                         </div>
                         <div>
                             <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2 font-bold">Messaggio</label>
-                            <textarea id="message" rows="4" required class="w-full bg-white border border-gray-200 rounded-sm px-4 py-4 text-brand-dark focus:border-brand-accent focus:ring-1 focus:ring-brand-accent outline-none transition-all placeholder-gray-400" placeholder="Descrivi brevemente di cosa hai bisogno..."></textarea>
+                            <textarea name="message" rows="4" required class="w-full bg-white border border-gray-200 rounded-sm px-4 py-4 text-brand-dark focus:border-brand-accent focus:ring-1 focus:ring-brand-accent outline-none transition-all placeholder-gray-400" placeholder="Descrivi brevemente di cosa hai bisogno..."></textarea>
                         </div>
-                        <button type="button" onclick="sendMail()" class="w-full bg-brand-dark text-white font-bold uppercase tracking-[0.15em] py-4 rounded-sm hover:bg-brand-accent transition-all duration-300 shadow-lg mt-2 text-sm">
-                            INVIA RICHIESTA
+                        <button type="submit" class="w-full bg-brand-dark text-white font-bold uppercase tracking-[0.15em] py-4 rounded-sm hover:bg-brand-accent transition-all duration-300 shadow-lg mt-2 text-sm">
+                            Invia Richiesta
                         </button>
-                        <p class="text-[10px] text-gray-400 text-center mt-2">*Cliccando, si aprirà la tua app di posta predefinita con i dati già compilati.</p>
                     </form>
                 </div>
+
             </div>
 
-            <!-- Footer Bottom -->
             <div class="mt-24 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 gap-4">
                 <span>&copy; 2025 Nikita Lorusso. Tutti i diritti riservati.</span>
                 <span class="hidden md:inline">Made in Puglia.</span>
-                <span>Web Design: Conversano • Bari • Monopoli • Italia</span>
+                <span>Web Design & Grafica Conversano - Bari.</span>
             </div>
         </div>
     </footer>
 
     <script>
-        // Animazione Scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -480,7 +609,6 @@
 
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        // Menu Mobile
         const menuBtn = document.getElementById('menu-btn');
         const menuClose = document.getElementById('menu-close');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -500,24 +628,6 @@
         menuBtn.addEventListener('click', toggleMenu);
         menuClose.addEventListener('click', toggleMenu);
         mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
-
-        // Funzione Mailto (Semplice & Immediata)
-        function sendMail() {
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            if(!name || !email || !message) {
-                alert("Per favore compila tutti i campi.");
-                return;
-            }
-
-            const subject = `Nuova Richiesta dal Sito da: ${name}`;
-            const body = `Nome: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessaggio:%0D%0A${message}`;
-            
-            // Apre il client di posta dell'utente
-            window.location.href = `mailto:nikitalorusso68@gmail.com?subject=${subject}&body=${body}`;
-        }
     </script>
 </body>
 </html>
