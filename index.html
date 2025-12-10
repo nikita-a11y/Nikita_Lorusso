@@ -26,7 +26,7 @@
     <meta property="og:url" content="https://www.nikitalorusso.com/">
     <meta property="og:title" content="Nikita Lorusso - Web & Graphics">
     <meta property="og:description" content="Siti web che distinguono il tuo brand e grafica pubblicitaria professionale.">
-    <meta property="og:image" content="https://www.nikitalorusso.com/og-image.jpg">
+    <meta property="og:image" content="main/Nikita_Lorusso_Design.jpeg">
     
     <!-- JSON-LD: Schema Aggiornato -->
     <script type="application/ld+json">
@@ -124,7 +124,7 @@
                         'marquee': 'marquee 40s linear infinite',
                         'float': 'float 6s ease-in-out infinite',
                         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'bounce-slow': 'bounce 3s infinite',
+                        'bounce-slow': 'bounce 2s infinite',
                     },
                     keyframes: {
                         marquee: {
@@ -178,10 +178,31 @@
 
         /* Floating Button Animation */
         .float-btn {
-            box-shadow: 0 10px 25px -5px rgba(255, 51, 0, 0.5);
+            box-shadow: 0 10px 25px -5px rgba(255, 51, 0, 0.4);
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         .float-btn:hover { transform: scale(1.1) rotate(5deg); }
+        
+        /* WhatsApp Button */
+        .whatsapp-btn {
+            background-color: #25D366;
+            box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+        }
+        .whatsapp-btn:hover { transform: scale(1.1); }
+
+        /* Scroll Top Button */
+        #scroll-top {
+            transition: opacity 0.3s, transform 0.3s;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(20px);
+        }
+        #scroll-top.visible {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
         
         /* Chat Bubble Animation */
         .chat-bubble {
@@ -201,6 +222,7 @@
 </head>
 <body class="bg-brand-light text-brand-text antialiased overflow-x-hidden">
 
+    <!-- Texture di sfondo -->
     <div class="bg-grain"></div>
 
     <!-- Navbar -->
@@ -380,7 +402,7 @@
             <div class="space-y-24 md:space-y-32">
                 
                 <!-- Project 1 -->
-                <a href="https://www.domenicoboccuzzi.com" target="_blank" class="block hover-lift reveal group">
+                <a href="https://www.domenicobocuzzi.com" target="_blank" class="block hover-lift reveal group">
                     <div class="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
                         <div class="md:col-span-7 relative overflow-hidden shadow-2xl border border-brand-border bg-white p-2 order-1">
                             <div class="aspect-[16/10] bg-gray-100 overflow-hidden relative">
@@ -511,7 +533,14 @@
         </div>
     </footer>
 
-    <!-- Sticky Contact Button (FAB) -->
+    <!-- Fixed Buttons (WhatsApp + ScrollTop) -->
+    
+    <!-- WhatsApp (Left) -->
+    <a href="https://wa.me/393347716561?text=Ciao%20Nikita,%20vorrei%20info%20sui%20tuoi%20servizi" target="_blank" class="fixed bottom-6 left-6 z-[60] whatsapp-btn w-14 h-14 rounded-full flex items-center justify-center text-white text-3xl shadow-xl hover:scale-110 transition-transform">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Sticky Contact Button (Right) -->
     <div class="fixed bottom-6 right-6 z-[60] group">
         <!-- The Chat Bubble -->
         <div id="chat-bubble" class="chat-bubble hidden-bubble absolute bottom-20 right-0 bg-white p-6 rounded-2xl shadow-2xl border border-gray-100 w-72 mb-2 origin-bottom-right">
@@ -530,6 +559,11 @@
             <i class="fas fa-comment-dots text-2xl"></i>
         </button>
     </div>
+
+    <!-- Scroll Top Button -->
+    <button id="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-24 right-6 z-[50] w-12 h-12 bg-white text-brand-dark border border-gray-200 rounded-full flex items-center justify-center shadow-md hover:bg-brand-dark hover:text-white transition-all transform translate-y-10 opacity-0">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script>
         // Translations Data
@@ -653,6 +687,16 @@
         }, { threshold: 0.1 });
 
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Scroll Top Logic
+        const scrollTopBtn = document.getElementById('scroll-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
 
         const menuBtn = document.getElementById('menu-btn');
         const menuClose = document.getElementById('menu-close');
