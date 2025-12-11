@@ -197,6 +197,7 @@
             <!-- Menu Desktop -->
             <div class="hidden lg:flex items-center space-x-10 text-xs font-bold uppercase tracking-[0.15em] text-gray-500">
                 <a href="#progetti" class="hover:text-xmas-red transition-colors" data-i18n="nav_portfolio">Portfolio</a>
+                <a href="#lab" class="hover:text-xmas-red transition-colors" data-i18n="nav_lab">Software Lab</a>
                 <a href="#servizi" class="hover:text-xmas-red transition-colors" data-i18n="nav_services">Servizi</a>
                 <a href="#about" class="hover:text-xmas-red transition-colors" data-i18n="nav_about">Chi Sono</a>
                 
@@ -233,6 +234,7 @@
         </button>
         <div class="flex flex-col items-center text-center">
             <a href="#progetti" class="mobile-link" onclick="closeMenu()" data-i18n="nav_portfolio">LAVORI</a>
+            <a href="#lab" class="mobile-link" onclick="closeMenu()" data-i18n="nav_lab">SOFTWARE LAB</a>
             <a href="#servizi" class="mobile-link" onclick="closeMenu()" data-i18n="nav_services">SERVIZI</a>
             <a href="#about" class="mobile-link" onclick="closeMenu()" data-i18n="nav_about">CHI SONO</a>
             <a href="#contatti" class="mobile-link text-xmas-red border-b-4 border-xmas-red/20 pb-1" onclick="closeMenu()" data-i18n="nav_contact">CONTATTAMI</a>
@@ -291,7 +293,7 @@
         </div>
     </header>
 
-    <!-- Marquee Infinito (Fixed Loop) -->
+    <!-- Marquee Infinito -->
     <div class="bg-xmas-dark py-6 overflow-hidden border-y-4 border-xmas-gold rotate-1 scale-105 transform origin-left z-20 relative shadow-2xl">
         <div class="whitespace-nowrap animate-marquee flex gap-16 text-white/90 font-display font-bold text-3xl md:text-5xl uppercase tracking-tighter w-max">
             <span class="text-xmas-gold">★</span> <span>Sconto 30%</span> <span class="text-xmas-gold">★</span> <span>Siti Web</span> <span class="text-xmas-gold">★</span> <span>Conversano</span> <span class="text-xmas-gold">★</span> <span>Grafica</span> <span class="text-xmas-gold">★</span> <span>Bari</span>
@@ -299,8 +301,120 @@
         </div>
     </div>
 
+    <!-- Numeri & Autorità -->
+    <section class="bg-white py-16 border-b border-gray-100">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-100">
+                <div class="reveal">
+                    <p class="text-4xl font-display font-bold text-xmas-red mb-2">100%</p>
+                    <p class="text-xs font-bold uppercase tracking-widest text-gray-500">Clienti Soddisfatti</p>
+                </div>
+                <div class="reveal" style="transition-delay: 100ms;">
+                    <p class="text-4xl font-display font-bold text-xmas-red mb-2">24h</p>
+                    <p class="text-xs font-bold uppercase tracking-widest text-gray-500">Risposta Preventivi</p>
+                </div>
+                <div class="reveal" style="transition-delay: 200ms;">
+                    <p class="text-4xl font-display font-bold text-xmas-red mb-2">0</p>
+                    <p class="text-xs font-bold uppercase tracking-widest text-gray-500">Costi Agenzia</p>
+                </div>
+                <div class="reveal" style="transition-delay: 300ms;">
+                    <p class="text-4xl font-display font-bold text-xmas-red mb-2">SEO</p>
+                    <p class="text-xs font-bold uppercase tracking-widest text-gray-500">Inclusa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- I Miei Servizi -->
+    <section id="servizi" class="py-24 md:py-32 bg-gray-50 relative">
+        <div class="container mx-auto px-6 md:px-12 max-w-[1600px]">
+            <div class="text-center mb-16 md:mb-20 reveal">
+                <span class="text-xmas-red font-bold tracking-widest text-xs uppercase mb-4 block" data-i18n="services_sub">I Tuoi Regali</span>
+                <h2 class="text-3xl md:text-5xl font-display font-bold text-xmas-dark mb-6" data-i18n="services_title">Soluzioni per il 2026</h2>
+                <p class="text-gray-500 text-base md:text-lg max-w-2xl mx-auto font-light px-4" data-i18n="services_desc">
+                    Investi ora sulla tua immagine per partire avvantaggiato l'anno prossimo.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 md:p-10 border border-gray-100 shadow-sm hover:shadow-xl hover:border-xmas-red transition-all duration-300 reveal group rounded-lg">
+                    <div class="w-14 h-14 rounded-full bg-red-50 flex items-center justify-center mb-8 group-hover:bg-xmas-red transition-colors">
+                        <i class="fas fa-desktop text-2xl text-xmas-red group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-display uppercase tracking-wide mb-4 text-xmas-dark" data-i18n="s1_t">Siti Web Vetrina</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6" data-i18n="s1_d">
+                        Siti web moderni, veloci e ottimizzati per smartphone. La tua azienda aperta 24/7. Perfetti per farsi trovare su Google.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 md:p-10 border border-gray-100 shadow-sm hover:shadow-xl hover:border-xmas-red transition-all duration-300 reveal group rounded-lg" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 rounded-full bg-red-50 flex items-center justify-center mb-8 group-hover:bg-xmas-red transition-colors">
+                        <i class="fas fa-paint-brush text-2xl text-xmas-red group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-display uppercase tracking-wide mb-4 text-xmas-dark" data-i18n="s2_t">Grafica Pubblicitaria</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6" data-i18n="s2_d">
+                        Non solo web. Curo la tua immagine anche offline. Creo materiale promozionale (flyer, menu, brochure) che attira l'attenzione.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 md:p-10 border border-gray-100 shadow-sm hover:shadow-xl hover:border-xmas-red transition-all duration-300 reveal group rounded-lg" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 rounded-full bg-red-50 flex items-center justify-center mb-8 group-hover:bg-xmas-red transition-colors">
+                        <i class="fas fa-fingerprint text-2xl text-xmas-red group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-display uppercase tracking-wide mb-4 text-xmas-dark" data-i18n="s3_t">Brand Identity</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6" data-i18n="s3_d">
+                        Un nuovo anno merita un nuovo look. Progetto loghi unici e memorabili che definiscono lo stile del tuo successo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodo / Chi Sono -->
+    <section id="metodo" class="py-24 md:py-32 bg-xmas-dark text-white">
+        <div class="container mx-auto px-6 md:px-12 max-w-5xl">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <h2 class="text-3xl md:text-5xl font-display font-bold mb-6" data-i18n="method_title">Il Mio Metodo</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8" data-i18n="method_desc">
+                        Niente perdite di tempo. Analizzo il tuo mercato a Conversano/Bari, creo una strategia su misura e sviluppo il tuo progetto con precisione.
+                        <br><br>
+                        Il risultato? Un prodotto digitale che funziona e porta risultati concreti.
+                    </p>
+                </div>
+                <div class="reveal" style="transition-delay: 100ms;">
+                    <div class="border-l-2 border-xmas-red pl-8 mb-8">
+                        <h3 class="text-xl font-bold mb-2">1. Analisi</h3>
+                        <p class="text-sm text-gray-400">Studio i tuoi competitor e il tuo target.</p>
+                    </div>
+                    <div class="border-l-2 border-xmas-red pl-8 mb-8">
+                        <h3 class="text-xl font-bold mb-2">2. Sviluppo</h3>
+                        <p class="text-sm text-gray-400">Design e codice di alta qualità.</p>
+                    </div>
+                    <div class="border-l-2 border-xmas-red pl-8">
+                        <h3 class="text-xl font-bold mb-2">3. Lancio</h3>
+                        <p class="text-sm text-gray-400">Messa online e supporto continuo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chi Sono (About) -->
+    <section id="about" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="container mx-auto px-6 max-w-4xl text-center reveal">
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-xmas-dark mb-6">Chi Sono</h2>
+            <p class="text-gray-600 leading-loose">
+                Sono un professionista digitale con base a Conversano. La mia missione è portare la qualità delle grandi agenzie web alle piccole e medie imprese locali, ma con l'attenzione e i costi di un freelance.
+            </p>
+        </div>
+    </section>
+
     <!-- Portfolio Clienti -->
-    <section id="progetti" class="py-24 md:py-32 bg-white relative">
+    <section id="progetti" class="py-24 md:py-32 bg-white relative border-t border-gray-100">
         <div class="container mx-auto px-6 md:px-12 max-w-[1600px]">
             <div class="flex flex-col md:flex-row justify-between items-end mb-20 md:mb-24 reveal">
                 <div>
@@ -311,9 +425,8 @@
             </div>
 
             <div class="space-y-24 md:space-y-32">
-                
-                <!-- Project 1: Domenico Boccuzzi -->
-                <a href="https://www.domenicoboccuzzi.com" target="_blank" class="block project-card group relative bg-white p-4 md:p-8 reveal">
+                <!-- Project 1 -->
+                <a href="https://www.domenicobocuzzi.com" target="_blank" class="block project-card group relative bg-white p-4 md:p-8 reveal">
                     <div class="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
                         <div class="md:col-span-8 overflow-hidden bg-gray-100 relative aspect-video shadow-lg border border-gray-200">
                             <img src="https://ambasciatoridelgusto.it/wp-content/uploads/2023/07/Boccuzzi-Domenico-10.2022-2-scaled-uai-1280x1707.jpg" alt="Domenico Boccuzzi" class="project-img w-full h-full object-cover object-top">
@@ -329,7 +442,7 @@
                     </div>
                 </a>
 
-                <!-- Project 2: Luminaria Travel -->
+                <!-- Project 2 -->
                 <a href="https://www.luminariatravel.it" target="_blank" class="block project-card group relative bg-white p-4 md:p-8 reveal">
                     <div class="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
                         <div class="md:col-span-8 md:order-2 overflow-hidden bg-gray-100 relative aspect-video shadow-lg border border-gray-200">
@@ -346,17 +459,17 @@
                     </div>
                 </a>
 
-                <!-- Project 3: Cucina con Me -->
+                <!-- Project 3 -->
                 <a href="https://www.cucinaconmegraziellaeraffaele.it/" target="_blank" class="block project-card group relative bg-white p-4 md:p-8 reveal">
                     <div class="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
                         <div class="md:col-span-8 overflow-hidden bg-white relative aspect-video flex items-center justify-center p-12 shadow-lg border border-gray-100">
                             <img src="https://www.cucinaconmegraziellaeraffaele.it/wp-content/uploads/2025/05/CUCINA-CON-ME-270-x-90-px.png" alt="Logo Design" class="project-img object-contain w-auto h-auto max-h-[80%]">
                         </div>
                         <div class="md:col-span-4">
-                            <span class="text-xmas-gold font-bold text-xs uppercase tracking-[0.2em] mb-4 block">03 / Branding</span>
+                            <span class="text-xmas-red font-bold text-xs uppercase tracking-[0.2em] mb-4 block">03 / Branding</span>
                             <h3 class="text-3xl md:text-5xl font-display font-bold text-xmas-dark mb-6 group-hover:text-xmas-red transition-colors">Cucina <br> con Me</h3>
                             <p class="text-gray-500 text-base leading-relaxed mb-8" data-i18n="p3_desc">
-                                Rebranding e Logo Design per un food blog di successo. Identità visiva moderna e versatile.
+                                Rebranding e Logo Design per un food blog di successo. Identità visiva moderna per distinguersi.
                             </p>
                             <span class="inline-block border-b border-xmas-red pb-1 text-xs font-bold uppercase tracking-widest text-xmas-dark group-hover:text-xmas-red transition-all" data-i18n="view_blog">Vedi il Blog</span>
                         </div>
@@ -366,8 +479,45 @@
         </div>
     </section>
 
-    <!-- Recensioni (Social Proof Reale) -->
-    <section id="reviews" class="py-20 bg-gray-50 border-t border-gray-200">
+    <!-- Lab & Software (CV CREATOR) -->
+    <section id="lab" class="py-24 md:py-32 bg-gray-50 relative border-t border-gray-200">
+        <div class="container mx-auto px-6 md:px-12 max-w-[1600px]">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 md:mb-24 reveal">
+                <div>
+                    <h2 class="text-4xl md:text-6xl font-display font-bold text-xmas-dark mb-2">Software Lab</h2>
+                    <p class="text-gray-500 font-medium tracking-wide">Progetti proprietari e innovazione.</p>
+                </div>
+            </div>
+
+            <!-- CV Creator Card -->
+            <a href="https://nikitalorusso.it/" target="_blank" class="block project-card group relative bg-white p-4 md:p-8 reveal">
+                <div class="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
+                    <div class="md:col-span-8 md:order-2 overflow-hidden bg-xmas-dark relative aspect-video shadow-lg border border-gray-200 flex items-center justify-center">
+                         <i class="fas fa-code text-8xl text-xmas-gold group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                    <div class="md:col-span-4 md:order-1 md:text-right">
+                        <span class="text-xmas-gold font-bold text-xs uppercase tracking-[0.2em] mb-4 block">04 / Web App</span>
+                        <h3 class="text-3xl md:text-5xl font-display font-bold text-xmas-dark mb-6 group-hover:text-xmas-red transition-colors">CV Creator</h3>
+                        <p class="text-gray-500 text-base leading-relaxed mb-6">
+                            Applicazione web proprietaria per la creazione di curriculum. Dimostrazione di capacità tecniche avanzate.
+                        </p>
+                        
+                        <!-- Disclaimer Tecnico -->
+                        <div class="inline-block bg-yellow-50 border-l-4 border-yellow-400 p-3 mb-8 text-left">
+                            <p class="text-[10px] uppercase font-bold text-yellow-800 mb-1"><i class="fas fa-flask mr-1"></i> Beta Version</p>
+                            <p class="text-xs text-gray-600">Ottimizzato per <strong>Google Chrome</strong>. Potrebbe presentare imperfezioni.</p>
+                        </div>
+                        
+                        <br>
+                        <span class="inline-block border-b border-xmas-red pb-1 text-xs font-bold uppercase tracking-widest text-xmas-dark group-hover:text-xmas-red transition-all">Prova l'App</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Recensioni (Social Proof) -->
+    <section id="reviews" class="py-20 bg-white border-t border-gray-100">
         <div class="container mx-auto px-6 max-w-6xl">
             <div class="text-center mb-16 reveal">
                 <h2 class="text-3xl md:text-5xl font-display font-bold text-xmas-dark mb-6">Dicono di Me</h2>
@@ -378,7 +528,7 @@
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Luigi De Napoli -->
-                <div class="p-8 bg-white rounded-lg border border-gray-100 shadow-sm reveal hover:shadow-lg transition-all">
+                <div class="p-8 bg-gray-50 rounded-lg border border-gray-100 shadow-sm reveal hover:shadow-lg transition-all">
                     <i class="fas fa-quote-left text-3xl text-gray-200 mb-4"></i>
                     <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">"Ho avuto un’ottima esperienza. Si sono dimostrati professionali, disponibili e molto attenti. Il sito web è moderno, veloce e curato nei dettagli. Mi hanno seguito passo dopo passo anche dopo la consegna."</p>
                     <p class="font-bold text-xmas-dark uppercase text-xs tracking-widest">- Luigi De Napoli</p>
@@ -483,22 +633,12 @@
         </div>
     </footer>
 
-    <!-- Fixed Buttons Container -->
-    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-4 items-end">
-        
-        <!-- Phone Bubble -->
-        <a href="tel:+393347716561" class="floating-btn w-14 h-14 bg-xmas-dark text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
-            <i class="fas fa-phone-alt text-2xl"></i>
-        </a>
-
-        <!-- WhatsApp Bubble -->
-        <a href="https://wa.me/393347716561" target="_blank" class="floating-btn w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
-            <i class="fab fa-whatsapp text-3xl"></i>
-        </a>
-    </div>
+    <!-- WhatsApp Bubble -->
+    <a href="https://wa.me/393347716561" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center wa-float">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
 
     <script>
-        // Menu Mobile Logic
         const menuBtn = document.getElementById('menu-btn');
         const menuClose = document.getElementById('menu-close');
         const overlay = document.getElementById('mobile-menu-overlay');
@@ -517,7 +657,6 @@
         menuClose.addEventListener('click', closeMenu);
         document.querySelectorAll('.mobile-link').forEach(link => link.addEventListener('click', closeMenu));
 
-        // Scroll Reveal
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -528,7 +667,6 @@
         }, { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        // Mailto
         function sendMail() {
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
@@ -547,7 +685,7 @@
         // Language Logic
         const translations = {
             it: {
-                nav_portfolio: "LAVORI", nav_services: "SERVIZI", nav_method: "METODO", nav_about: "CHI SONO", nav_contact: "CONTATTAMI", nav_cta: "Offerta Fine Anno",
+                nav_portfolio: "LAVORI", nav_services: "SERVIZI", nav_method: "METODO", nav_about: "CHI SONO", nav_contact: "CONTATTAMI", nav_cta: "Offerta Fine Anno", nav_lab: "SOFTWARE",
                 hero_tagline: "Web Design & Grafica • Conversano & Italia", hero_title_1: "Fatti un", hero_title_2: "Regalo.",
                 hero_desc: "Sono <strong>Nikita Lorusso</strong>. Il 2026 è alle porte. Preparati con un sito web veloce, una grafica professionale e una strategia per trovare clienti a <strong>Conversano, Bari e in tutta Italia</strong>.",
                 hero_cta1: "Vedi i Lavori", hero_cta2: "Preventivo Gratuito", role: "Visual Designer",
@@ -564,7 +702,7 @@
                 form_name: "Il tuo Nome", form_msg: "Messaggio", form_btn: "INVIA RICHIESTA", form_budget: "Budget"
             },
             en: {
-                nav_portfolio: "WORKS", nav_services: "SERVICES", nav_method: "METHOD", nav_about: "ABOUT", nav_contact: "CONTACT", nav_cta: "New Year Offer",
+                nav_portfolio: "WORKS", nav_services: "SERVICES", nav_method: "METHOD", nav_about: "ABOUT", nav_contact: "CONTACT", nav_cta: "New Year Offer", nav_lab: "SOFTWARE",
                 hero_tagline: "Web Design & Graphics • Italy Based", hero_title_1: "Give Your", hero_title_2: "Business the Best.",
                 hero_desc: "I am <strong>Nikita Lorusso</strong>. 2026 is coming. Get ready with a fast website, professional graphics and a strategy to find clients in <strong>Italy</strong>.",
                 hero_cta1: "See Works", hero_cta2: "Free Quote", role: "Visual Designer",
