@@ -6,5 +6,11 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
+  
+  <url>
+    <loc>https://nikitalorusso.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
 </urlset>
