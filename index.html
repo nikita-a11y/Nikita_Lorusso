@@ -3,404 +3,344 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- SEO PER VENDERE: FOCUS SU FIDUCIA E RISULTATI -->
-    <title> Graphic & Web Designer | Nikita Lorusso Design </title>
-    <meta name="description" content="Realizzo siti web e grafiche professionali per aziende, attività e professionisti. Graphic e web designer a Conversano, lavoro con clienti in tutta Italia. Contattami.">
-    <meta name="keywords" content="web designer professionale,graphic designer professionale,siti web per aziende,siti web per professionisti,creazione loghi aziendali,branding completo,grafiche per social media,cv professionale personalizzato,curriculum designer,landing page professionale,siti web responsive,design grafico per attività,identità visiva per aziende,portfolio digitale professionale,web design e branding,graphic design per social media,servizi web per professionisti,progetti grafici personalizzati,siti web moderni,realizzazione siti web professionali">
-    <meta name="author" content="Nikita Lorusso">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#B91C1C">
+    <meta name="description" content="Siti Web che portano clienti e Grafica che vende. Nikita Lorusso a Conversano: Web Design, SEO e Storytelling. Offerta -30% Natale.">
+    <meta name="theme-color" content="#991B1B">
     
-    <!-- Canonical -->
-    <link rel="canonical" href="https://www.nikitalorusso.com/" />
+    <title>Nikita Lorusso | Siti Web & Branding che Vendono | Conversano</title>
+
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cinzel:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
     
-    <!-- Open Graph -->
-    <meta property="og:type" content="business.business">
-    <meta property="og:url" content="https://www.nikitalorusso.com/">
-    <meta property="og:title" content="🎁 Il Regalo Natalizio per il tuo Business: -30% su Web & Grafica ">
-    <meta property="og:description" content="Siti web professionali, branding e grafica per aziende, ristoranti e attività in Puglia e in tutta Italia.">
-    <meta property="og:image" content="Nikita_Lorusso_Design.jpeg">
-
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Nikita Lorusso Design",
-      "image": "https://www.nikitalorusso.com/logo.png",
-      "@id": "https://www.nikitalorusso.com",
-      "priceRange": "€€",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Conversano",
-        "addressRegion": "BA",
-        "postalCode": "70014",
-        "addressCountry": "IT"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "reviewCount": "48"
-      }
-    }
-    </script>
-
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Fonts: 'Cinzel' (Lusso Natalizio) & 'Outfit' (Moderno e Leggibile) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Cinzel:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Outfit', 'sans-serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
                         display: ['Cinzel', 'serif'],
+                        serif: ['"Playfair Display"', 'serif'],
                     },
                     colors: {
-                        xmas: {
-                            red: '#B91C1C',      // Rosso Natale Profondo
-                            bright: '#E53E3E',   // Rosso Acceso (CTA)
-                            gold: '#D4AF37',     // Oro Premium
-                            snow: '#F8FAFC',     // Bianco Ghiaccio
-                            dark: '#0F172A',     // Blu Notte
-                            text: '#1E293B'      // Grigio scuro
+                        brand: {
+                            red: '#991B1B',      
+                            vivid: '#DC2626',
+                            gold: '#C5A059',
+                            dark: '#0F172A',
+                            surface: '#F1F5F9'
                         }
                     },
                     animation: {
-                        'snow': 'snow 10s linear infinite',
                         'float': 'float 6s ease-in-out infinite',
-                        'pulse-gold': 'pulseGold 2s infinite',
-                        'marquee': 'marquee 30s linear infinite',
+                        'pulse-glow': 'pulseGlow 2s infinite',
+                        'slide-up': 'slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
                     },
                     keyframes: {
-                        snow: {
-                            '0%': { transform: 'translateY(-10vh) translateX(0)', opacity: '0' },
-                            '10%': { opacity: '1' },
-                            '100%': { transform: 'translateY(110vh) translateX(20px)', opacity: '0' },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
                         },
-                        pulseGold: {
-                            '0%, 100%': { boxShadow: '0 0 0 0 rgba(212, 175, 55, 0.4)' },
-                            '50%': { boxShadow: '0 0 0 10px rgba(212, 175, 55, 0)' },
+                        pulseGlow: {
+                            '0%, 100%': { boxShadow: '0 0 0 0 rgba(220, 38, 38, 0.4)' },
+                            '50%': { boxShadow: '0 0 0 10px rgba(220, 38, 38, 0)' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
                         }
                     }
                 }
             }
         }
     </script>
- 
+
+    <style>
+        /* Ottimizzazione Rendering */
+        body { 
+            background-color: #F8FAFC; 
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Effetto Neve Leggero (Performance Optimized) */
+        .snowflake {
+            position: fixed; top: -10px; z-index: 0;
+            color: #cbd5e1; font-size: 1em; opacity: 0.5;
+            animation: snow 15s linear infinite; pointer-events: none;
+            will-change: transform;
+        }
+        @keyframes snow { 100% { transform: translateY(100vh); } }
+
+        /* Navbar Ovale "Glass" */
+        .nav-pill {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 4px 30px rgba(0,0,0,0.03);
+            transition: all 0.3s ease;
+        }
+        .nav-pill.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            padding-top: 0.5rem; padding-bottom: 0.5rem;
+        }
+
+        /* Pulsante CTA Magnetico */
+        .btn-cta {
+            background: linear-gradient(135deg, #991B1B 0%, #DC2626 100%);
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative; overflow: hidden;
+        }
+        .btn-cta::after {
+            content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: 0.5s;
+        }
+        .btn-cta:hover::after { left: 100%; }
+        .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(153, 27, 27, 0.3); }
+
+        /* Card 3D Libri */
+        .book-card { perspective: 1000px; }
+        .book-inner {
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+            box-shadow: -10px 10px 20px rgba(0,0,0,0.2);
+        }
+        .book-card:hover .book-inner { transform: rotateY(-10deg) rotateX(5deg) scale(1.05); }
+
+        /* Reveal on Scroll */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
 </head>
-<body class="bg-xmas-snow text-xmas-text antialiased">
+<body class="text-brand-dark overflow-x-hidden">
 
-    <!-- Neve -->
-    <div class="snowflake">❅</div><div class="snowflake">●</div><div class="snowflake">❅</div>
-    <div class="snowflake">❆</div><div class="snowflake">●</div><div class="snowflake">❆</div>
-    <div class="snowflake">❅</div>
+    <!-- Neve (Pochi elementi per non rallentare) -->
+    <div class="snowflake" style="left: 10%; animation-delay: 0s;">❄</div>
+    <div class="snowflake" style="left: 50%; animation-delay: 5s;">•</div>
+    <div class="snowflake" style="left: 80%; animation-delay: 2s;">❄</div>
 
-    <!-- BANNER OFFERTA -->
-    <div class="fixed top-0 left-0 w-full bg-gradient-to-r from-red-800 via-xmas-red to-red-800 text-white z-[60] py-2 px-4 text-center shadow-md border-b border-xmas-gold/30">
-        <p class="text-[10px] md:text-xs font-bold tracking-widest uppercase flex items-center justify-center gap-2">
-            <i class="fas fa-gift text-xmas-gold animate-bounce"></i>
-            Speciale Natale: <span class="text-xmas-gold font-black">-30%</span> su Web Design & Grafica
-            <i class="fas fa-gift text-xmas-gold animate-bounce"></i>
-        </p>
+    <!-- Top Bar Urgenza -->
+    <div class="bg-brand-dark text-white text-center py-2 px-4 text-[10px] md:text-xs font-bold tracking-widest uppercase relative z-50">
+        <span class="inline-flex items-center gap-2 animate-pulse">
+            <i class="fas fa-clock text-brand-gold"></i>
+            Offerta Natale: -30% termina a breve
+        </span>
     </div>
 
-    <!-- Navbar -->
-    <nav class="fixed w-full z-50 top-[32px] left-0 py-4 px-6 md:px-12 bg-white/95 backdrop-blur-md border-b border-gray-100 transition-all duration-300 shadow-sm">
-        <div class="max-w-[1600px] mx-auto flex justify-between items-center">
+    <!-- NAVIGAZIONE FLUTTUANTE -->
+    <div class="fixed top-8 left-0 w-full z-40 flex justify-center px-4 pointer-events-none">
+        <nav id="navbar" class="nav-pill pointer-events-auto rounded-full px-6 py-3 flex items-center justify-between gap-6 md:gap-10 w-full max-w-4xl">
+            
             <!-- Logo -->
-            <a href="#" class="text-xl md:text-2xl font-display font-bold tracking-tight text-xmas-dark hover:text-xmas-red transition-colors uppercase group relative z-50 flex items-center gap-1">
-                Nikita Lorusso Design <span class="text-xmas-red text-3xl group-hover:rotate-12 transition-transform">.</span>
-                <i class="fas fa-hat-santa text-xmas-red absolute -top-3 -right-2 text-lg rotate-12 drop-shadow-md"></i>
+            <a href="#" class="font-display font-black text-xl tracking-tighter text-brand-dark group shrink-0">
+                NL<span class="text-brand-red text-2xl leading-none">.</span>
             </a>
 
             <!-- Menu Desktop -->
-            <div class="hidden lg:flex items-center space-x-10 text-xs font-bold uppercase tracking-[0.15em] text-gray-500">
-                <a href="#progetti" class="hover:text-xmas-red transition-colors" data-i18n="nav_portfolio">Portfolio</a>
-                <a href="#servizi" class="hover:text-xmas-red transition-colors" data-i18n="nav_services">Servizi</a>
-                <a href="#lab" class="hover:text-xmas-red transition-colors" data-i18n="nav_lab">Software</a>
-                <a href="#about" class="hover:text-xmas-red transition-colors" data-i18n="nav_about">Chi Sono</a>
-                
+            <div class="hidden md:flex items-center gap-6 text-[11px] font-bold uppercase tracking-widest text-gray-500">
+                <a href="#progetti" class="hover:text-brand-red transition-colors">Portfolio</a>
+                <a href="#servizi" class="hover:text-brand-red transition-colors">Servizi</a>
+                <a href="#autore" class="hover:text-brand-red transition-colors text-brand-gold font-black">Libri</a>
+                <a href="#about" class="hover:text-brand-red transition-colors">Chi Sono</a>
+            </div>
 
-            <!-- CTA -->
-            <a href="#contatti" class="hidden lg:inline-block px-8 py-2.5 bg-xmas-green text-white text-xs font-bold uppercase tracking-[0.15em] hover:bg-xmas-dark transition-all duration-300 shadow-lg transform hover:-translate-y-0.5 rounded-sm border border-xmas-gold/20">
-                Riscatta Sconto
-            </a>
-
-            <!-- Mobile Toggle -->
-            <div class="lg:hidden flex items-center gap-4 z-[110]">
-                <div class="flex items-center gap-2 text-xs font-bold text-gray-600">
-                    <button onclick="setLanguage('it')" class="text-xmas-red font-bold" id="mob-btn-it">IT</button> / 
-                    <button onclick="setLanguage('en')" id="mob-btn-en">EN</button>
-                </div>
-                <button id="menu-btn" class="text-xmas-dark text-3xl p-2 relative focus:outline-none">
+            <!-- Mobile Trigger & CTA -->
+            <div class="flex items-center gap-3">
+                <a href="#contatti" class="btn-cta text-white text-[10px] md:text-xs font-bold uppercase tracking-widest px-5 py-2.5 rounded-full shadow-lg hidden sm:block">
+                    Preventivo
+                </a>
+                <button onclick="toggleMenu()" class="md:hidden text-2xl text-brand-dark w-10 h-10 flex items-center justify-center">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
-        </div>
-    </nav>
-
-    <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu-overlay" class="mobile-menu-overlay">
-        <button id="menu-close" class="absolute top-12 right-6 text-4xl text-xmas-dark p-4 focus:outline-none hover:text-xmas-red transition">
-            &times;
-        </button>
-        <div class="flex flex-col items-center text-center">
-            <a href="#progetti" class="mobile-link" onclick="closeMenu()" data-i18n="nav_portfolio">LAVORI</a>
-            <a href="#servizi" class="mobile-link" onclick="closeMenu()" data-i18n="nav_services">SERVIZI</a>
-            <a href="#lab" class="mobile-link" onclick="closeMenu()" data-i18n="nav_lab">SOFTWARE LAB</a>
-            <a href="#about" class="mobile-link" onclick="closeMenu()" data-i18n="nav_about">CHI SONO</a>
-            <a href="#contatti" class="mobile-link text-xmas-red border-b-4 border-xmas-red/20 pb-1" onclick="closeMenu()" data-i18n="nav_contact">CONTATTAMI</a>
-        </div>
+        </nav>
     </div>
 
-    <!-- Hero Section -->
-    <header class="relative pt-48 pb-20 md:pt-64 md:pb-32 px-6 md:px-12 min-h-[90vh] flex items-center justify-center overflow-hidden">
-        <div class="absolute top-0 right-0 w-[50%] h-full bg-gradient-to-l from-red-50 to-transparent skew-x-12 origin-top transform translate-x-1/4 -z-10 opacity-70"></div>
-        <div class="absolute top-20 right-20 text-xmas-gold/10 text-9xl font-display -z-10 rotate-12 hidden lg:block select-none">2026</div>
+    <!-- Mobile Menu Fullscreen -->
+    <div id="mobileMenu" class="fixed inset-0 bg-white/95 backdrop-blur-xl z-[60] flex flex-col items-center justify-center gap-8 opacity-0 pointer-events-none transition-opacity duration-300">
+        <button onclick="toggleMenu()" class="absolute top-6 right-6 p-4 text-3xl text-brand-dark"><i class="fas fa-times"></i></button>
+        <a href="#progetti" onclick="toggleMenu()" class="text-3xl font-display font-bold text-brand-dark">Lavori</a>
+        <a href="#servizi" onclick="toggleMenu()" class="text-3xl font-display font-bold text-brand-dark">Servizi</a>
+        <a href="#autore" onclick="toggleMenu()" class="text-3xl font-display font-bold text-brand-gold">Libri</a>
+        <a href="#about" onclick="toggleMenu()" class="text-3xl font-display font-bold text-brand-dark">Chi Sono</a>
+        <a href="#contatti" onclick="toggleMenu()" class="text-xl font-bold text-white bg-brand-red px-8 py-3 rounded-full shadow-xl">Chiedi Preventivo</a>
+    </div>
 
-        <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-12 lg:gap-24 items-center relative z-10">
-            
-            <div class="lg:col-span-7 order-2 lg:order-1 reveal text-center lg:text-left">
-                <div class="inline-flex items-center gap-3 mb-8 justify-center lg:justify-start">
-                    <span class="w-12 h-[2px] bg-xmas-red"></span>
-                    <span class="text-xmas-red text-xs font-bold uppercase tracking-[0.25em]" data-i18n="hero_loc">Conversano • Bari • Italia</span>
+    <!-- HERO SECTION -->
+    <header class="relative pt-40 pb-20 md:pt-52 md:pb-32 px-6 overflow-hidden min-h-[90vh] flex items-center justify-center">
+        <!-- Background Gradients -->
+        <div class="absolute inset-0 bg-gradient-to-b from-red-50/50 to-white -z-10"></div>
+        <div class="absolute -right-20 top-20 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl animate-float"></div>
+
+        <div class="max-w-6xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center relative z-10">
+            <!-- Testo -->
+            <div class="text-center lg:text-left animate-slide-up">
+                <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full bg-brand-red/5 border border-brand-red/10 mx-auto lg:mx-0">
+                    <span class="w-2 h-2 rounded-full bg-brand-red animate-pulse"></span>
+                    <span class="text-brand-red text-[10px] font-bold uppercase tracking-widest">Disponibile Ora a Conversano</span>
                 </div>
-                
-                <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.95] mb-8 text-xmas-dark uppercase tracking-tight">
-                    <span data-i18n="hero_t1">Design Digitale</span> <br>
-                    <span class="text-xmas-red relative inline-block">
-                        <span data-i18n="hero_t2">per Aziende e Professionisti</span>
-                        <i class="fas fa-star absolute -top-6 -right-10 text-4xl text-xmas-gold animate-pulse"></i>
-                    </span>
+
+                <h1 class="text-5xl md:text-7xl font-display font-bold text-brand-dark leading-[0.95] mb-6 tracking-tight">
+                    Smetti di perdere <br>
+                    <span class="text-brand-red relative inline-block">Clienti.</span>
                 </h1>
-                
-                <p class="text-lg md:text-xl text-gray-600 font-light leading-relaxed max-w-xl mb-12 border-l-4 border-xmas-gold pl-6 mx-auto lg:mx-0" data-i18n="hero_desc">
-                    Siti web, loghi, grafiche per social e branding su misura per la tua attività. 
+
+                <p class="text-lg text-gray-600 font-light leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
+                    Il tuo sito web attuale sta vendendo per te? 
+                    Sono <strong>Nikita Lorusso</strong>. Unisco codice perfetto e design psicologico per trasformare i visitatori in clienti paganti.
                 </p>
-                
-                <div class="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-                    <a href="#contatti" class="px-10 py-4 btn-shimmer text-white font-bold text-xs tracking-[0.2em] uppercase rounded-sm shadow-xl shadow-red-200 text-center hover:shadow-2xl transition-all" data-i18n="hero_cta1">
-                        Riscatta Offerta
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#contatti" class="btn-cta px-8 py-4 rounded-full text-white font-bold text-sm uppercase tracking-widest shadow-xl text-center animate-pulse-glow">
+                        Voglio più Vendite
                     </a>
-                    <a href="#progetti" class="px-10 py-4 border border-xmas-dark text-xmas-dark font-bold text-xs tracking-[0.2em] uppercase hover:bg-white transition-all text-center rounded-sm bg-transparent" data-i18n="hero_cta2">
-                     Esempi di Progetti Professionali 
+                    <a href="#progetti" class="px-8 py-4 border border-gray-200 text-brand-dark font-bold text-sm uppercase tracking-widest rounded-full hover:bg-white hover:shadow-lg transition-all text-center bg-white/50 backdrop-blur-sm">
+                        Vedi i Risultati
                     </a>
+                </div>
+
+                <div class="mt-8 flex items-center justify-center lg:justify-start gap-6 text-[10px] font-bold uppercase tracking-widest text-gray-400">
+                    <span class="flex items-center gap-2"><i class="fas fa-check text-brand-gold"></i> Siti Veloci</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-check text-brand-gold"></i> SEO Locale</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-check text-brand-gold"></i> Storytelling</span>
                 </div>
             </div>
 
-            <!-- Immagine Personale -->
-            <div class="lg:col-span-5 order-1 lg:order-2 relative reveal w-full max-w-md mx-auto" style="transition-delay: 100ms;">
-                <div class="relative bg-white p-4 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500 border border-xmas-gold/30">
-                    <img src="Nikita_Lorusso_Design.jpeg" 
-                         alt="Nikita Lorusso Web Designer Conversano Bari" 
-                         class="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700"
-                         width="600" height="800">
-                    <div class="pt-6 pb-2 text-center border-t border-gray-100 mt-2">
-                        <p class="font-display font-bold text-xl text-xmas-dark uppercase mb-1">Nikita Lorusso</p>
-                        <p class="text-[10px] uppercase tracking-[0.2em] text-xmas-red font-bold">Creative Developer</p>
+            <!-- Immagine Hero -->
+            <div class="relative w-full max-w-sm mx-auto lg:ml-auto perspective-1000 group animate-slide-up" style="animation-delay: 0.1s;">
+                <div class="absolute inset-0 bg-brand-gold/20 rounded-2xl transform rotate-6 transition-transform group-hover:rotate-3"></div>
+                <img src="Nikita_Lorusso_Design.jpeg" alt="Nikita Lorusso" class="relative z-10 w-full rounded-2xl shadow-2xl border-4 border-white object-cover transform transition-transform group-hover:scale-[1.02]">
+                
+                <!-- Badge Autore Fluttuante -->
+                <a href="#autore" class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl border border-gray-100 animate-float z-20 flex items-center gap-3 hover:scale-105 transition-transform">
+                    <div class="bg-brand-gold/10 p-3 rounded-full text-brand-gold">
+                        <i class="fas fa-pen-nib"></i>
                     </div>
-                </div>
-                <!-- Decorazione Oro -->
-                <div class="absolute -z-10 -bottom-6 -right-6 w-full h-full border-2 border-xmas-red/10"></div>
+                    <div>
+                        <p class="text-[10px] text-gray-400 font-bold uppercase">Anche Autore</p>
+                        <p class="font-display font-bold text-brand-dark text-sm">Libri su Amazon</p>
+                    </div>
+                </a>
             </div>
         </div>
     </header>
 
-    <!-- Marquee Infinito -->
-    <div class="bg-xmas-dark py-6 overflow-hidden border-y-4 border-xmas-gold rotate-1 scale-105 transform origin-left z-20 relative shadow-2xl">
-        <div class="whitespace-nowrap animate-marquee flex gap-16 text-white/90 font-display font-bold text-3xl md:text-5xl uppercase tracking-tighter w-max">
-            <span class="text-xmas-gold">★</span> <span>Sconto 30%</span> <span class="text-xmas-gold">★</span> <span>Siti Web</span> <span class="text-xmas-gold">★</span> <span>Conversano</span> <span class="text-xmas-gold">★</span> <span>Grafica</span> <span class="text-xmas-gold">★</span> <span>Bari</span>
-            <span class="text-xmas-gold">★</span> <span>Sconto 30%</span> <span class="text-xmas-gold">★</span> <span>Siti Web</span> <span class="text-xmas-gold">★</span> <span>Conversano</span> <span class="text-xmas-gold">★</span> <span>Grafica</span> <span class="text-xmas-gold">★</span> <span>Bari</span>
-        </div>
-    </div>
-
-    <!-- Numeri & Autorità -->
-    <section class="bg-white py-16 border-b border-gray-100">
-        <div class="container mx-auto px-6 max-w-6xl">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-100">
+    <!-- SECTION AUTORE (Highlight) -->
+    <section id="autore" class="py-24 bg-brand-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+        
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                
                 <div class="reveal">
-                    <p class="text-3xl md:text-4xl font-display font-bold text-xmas-red mb-2">100%</p>
-                    <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-500">Clienti Soddisfatti</p>
+                    <span class="text-brand-gold font-bold uppercase tracking-[0.2em] text-xs mb-4 block">Il Mio Nuovo Libro</span>
+                    <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">
+                        La Colpa: <br> <span class="text-gray-400 font-serif italic text-3xl">Nessuno è davvero innocente.</span>
+                    </h2>
+                    <p class="text-gray-400 text-lg mb-8 font-light leading-relaxed">
+                        Perché ti parlo dei miei libri? Perché scrivere un romanzo richiede la stessa psicologia necessaria per vendere un prodotto: <strong>emozione, struttura, ritmo</strong>.
+                        Porto questa capacità narrativa nel tuo sito web.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://www.amazon.it/Colpa-Nessuno-davvero-innocente/dp/B0G8HWS5TF" target="_blank" class="bg-white text-brand-dark px-8 py-3 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-brand-gold hover:text-white transition-colors flex items-center gap-2">
+                            <i class="fab fa-amazon"></i> Acquista Ora
+                        </a>
+                        <a href="https://www.amazon.it/stores/Nikita-Lorusso/author/B0DMK7SJM8" target="_blank" class="border border-white/20 px-8 py-3 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-white/10 transition-colors">
+                            Visita Store Autore
+                        </a>
+                    </div>
                 </div>
-                <div class="reveal" style="transition-delay: 100ms;">
-                    <p class="text-3xl md:text-4xl font-display font-bold text-xmas-red mb-2">24h</p>
-                    <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-500">Risposta Preventivi</p>
-                </div>
-                <div class="reveal" style="transition-delay: 200ms;">
-                    <p class="text-3xl md:text-4xl font-display font-bold text-xmas-red mb-2">0</p>
-                    <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-500">Costi Agenzia</p>
-                </div>
-                <div class="reveal" style="transition-delay: 300ms;">
-                    <p class="text-3xl md:text-4xl font-display font-bold text-xmas-red mb-2">SEO</p>
-                    <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-500">Inclusa</p>
+
+                <div class="flex justify-center reveal delay-100">
+                    <a href="https://www.amazon.it/Colpa-Nessuno-davvero-innocente/dp/B0G8HWS5TF" target="_blank" class="book-card w-48 md:w-60 aspect-[2/3] relative group">
+                        <div class="book-inner w-full h-full bg-gray-800 rounded-r-md border-l-4 border-gray-900 flex flex-col justify-between p-6 text-center relative overflow-hidden">
+                            <!-- Copertina Libro CSS -->
+                            <div class="absolute inset-0 bg-gradient-to-br from-gray-900 to-black opacity-90"></div>
+                            <div class="relative z-10 h-full flex flex-col justify-between border border-white/10 p-2">
+                                <span class="text-brand-gold text-[10px] uppercase tracking-[0.3em]">Thriller</span>
+                                <div>
+                                    <h3 class="text-2xl font-display font-bold text-white mb-1">LA COLPA</h3>
+                                    <p class="text-[10px] text-gray-400 italic">Nessuno è innocente</p>
+                                </div>
+                                <span class="text-white text-[10px] font-bold uppercase tracking-widest">Nikita Lorusso</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-2 left-2 w-full h-full border border-white/10 rounded-r-md -z-10"></div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- I Miei Servizi -->
-    <section id="servizi" class="py-24 md:py-32 bg-gray-50 relative">
-        <div class="container mx-auto px-6 md:px-12 max-w-[1600px]">
-            <div class="text-center mb-16 md:mb-20 reveal">
-                <span class="text-xmas-red font-bold tracking-widest text-xs uppercase mb-4 block" data-i18n="services_sub">30% di sconto fino a Natale</span>
-                <h2 class="text-3xl md:text-5xl font-display font-bold text-xmas-dark mb-6" data-i18n="services_title">Contatta Ora!</h2>
-                <p class="text-gray-500 text-base md:text-lg max-w-2xl mx-auto font-light px-4" data-i18n="services_desc">
-                   Se vuoi un sito web professionale, una grafica su misura o un CV che faccia colpo, contattami oggi. Lavoro con clienti in tutta Italia.
-                </p>
+    <!-- SERVIZI -->
+    <section id="servizi" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <span class="text-brand-red font-bold uppercase tracking-widest text-xs">Cosa Posso Fare Per Te</span>
+                <h2 class="text-4xl font-display font-bold text-brand-dark mt-2 mb-4">Investi nel Tuo Futuro</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">Non vendo template pronti. Costruisco asset digitali su misura.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="bg-white p-8 md:p-10 border border-gray-100 shadow-sm hover:shadow-xl hover:border-xmas-red transition-all duration-300 reveal group rounded-lg">
-                    <div class="w-14 h-14 rounded-full bg-red-50 flex items-center justify-center mb-8 group-hover:bg-xmas-red transition-colors">
-                        <i class="fas fa-desktop text-2xl text-xmas-red group-hover:text-white"></i>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card -->
+                <div class="bg-gray-50 p-8 rounded-2xl hover:bg-white hover:shadow-xl transition-all duration-300 group border border-gray-100 reveal">
+                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-brand-red text-2xl mb-6 shadow-sm group-hover:scale-110 transition-transform">
+                        <i class="fas fa-laptop-code"></i>
                     </div>
-                    <h3 class="text-xl font-bold font-display uppercase tracking-wide mb-4 text-xmas-dark" data-i18n="s1_t">Siti Web&Landing Page</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-6" data-i18n="s1_d">
-                        Siti web moderni, veloci, ottimizzati e responsive. Aperti 24/7. Richiedi ora il tuo!
-                    </p>
-                    <a href="#contatti" class="text-xmas-red text-xs font-bold uppercase tracking-wider border-b border-xmas-red pb-1 hover:text-xmas-dark transition-colors">Chiedi Preventivo</a>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Siti Web Vetrina</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">Veloci, sicuri e ottimizzati per convertire. Perfetti per professionisti e PMI locali.</p>
+                    <a href="#contatti" class="text-xs font-bold text-brand-red uppercase tracking-widest border-b border-brand-red pb-1">Preventivo</a>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="bg-white p-8 md:p-10 border border-gray-100 shadow-sm hover:shadow-xl hover:border-xmas-red transition-all duration-300 reveal group rounded-lg" style="transition-delay: 100ms;">
-                    <div class="w-14 h-14 rounded-full bg-red-50 flex items-center justify-center mb-8 group-hover:bg-xmas-red transition-colors">
-                        <i class="fas fa-paint-brush text-2xl text-xmas-red group-hover:text-white"></i>
+                <!-- Card -->
+                <div class="bg-gray-50 p-8 rounded-2xl hover:bg-white hover:shadow-xl transition-all duration-300 group border border-gray-100 reveal delay-100">
+                    <div class="w-14 h-14 bg-brand-red text-white rounded-xl flex items-center justify-center text-2xl mb-6 shadow-lg shadow-brand-red/20 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-pen-fancy"></i>
                     </div>
-                    <h3 class="text-xl font-bold font-display uppercase tracking-wide mb-4 text-xmas-dark" data-i18n="s2_t">Grafica Pubblicitaria</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-6" data-i18n="s2_d">
-                        Non solo web. Curo la tua immagine anche offline. Creo materiale promozionale (flyer, menu, brochure) che attira l'attenzione dei tuoi clienti.
-                    </p>
-                    <a href="#contatti" class="text-xmas-red text-xs font-bold uppercase tracking-wider border-b border-xmas-red pb-1 hover:text-xmas-dark transition-colors">Chiedi Preventivo</a>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Brand Identity</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">Logo, colori e stile. Creo un'immagine coordinata che ti fa sembrare un gigante del settore.</p>
+                    <a href="#contatti" class="text-xs font-bold text-brand-red uppercase tracking-widest border-b border-brand-red pb-1">Preventivo</a>
                 </div>
 
-                <!-- Service 3 -->
-                <div class="bg-white p-8 md:p-10 border border-gray-100 shadow-sm hover:shadow-xl hover:border-xmas-red transition-all duration-300 reveal group rounded-lg" style="transition-delay: 200ms;">
-                    <div class="w-14 h-14 rounded-full bg-red-50 flex items-center justify-center mb-8 group-hover:bg-xmas-red transition-colors">
-                        <i class="fas fa-fingerprint text-2xl text-xmas-red group-hover:text-white"></i>
+                <!-- Card -->
+                <div class="bg-gray-50 p-8 rounded-2xl hover:bg-white hover:shadow-xl transition-all duration-300 group border border-gray-100 reveal delay-200">
+                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-brand-red text-2xl mb-6 shadow-sm group-hover:scale-110 transition-transform">
+                        <i class="fas fa-search"></i>
                     </div>
-                    <h3 class="text-xl font-bold font-display uppercase tracking-wide mb-4 text-xmas-dark" data-i18n="s3_t">Brand Identity</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-6" data-i18n="s3_d">
-                        Un nuovo anno merita un nuovo look. Progetto loghi unici e su misura  che definiscono lo stile del tuo successo.
-                    </p>
-                    <a href="#contatti" class="text-xmas-red text-xs font-bold uppercase tracking-wider border-b border-xmas-red pb-1 hover:text-xmas-dark transition-colors">Chiedi Preventivo</a>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">SEO Locale</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">Fatti trovare prima dei tuoi concorrenti quando qualcuno cerca i tuoi servizi a Conversano/Bari.</p>
+                    <a href="#contatti" class="text-xs font-bold text-brand-red uppercase tracking-widest border-b border-brand-red pb-1">Preventivo</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Clienti -->
-    <section id="progetti" class="py-24 md:py-32 bg-white relative border-t border-gray-100">
-        <div class="container mx-auto px-6 md:px-12 max-w-[1600px]">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-20 md:mb-24 reveal">
-                <div>
-                    <h2 class="text-4xl md:text-6xl font-display font-bold text-xmas-dark mb-2" data-i18n="port_title">Casi Studio</h2>
-                    <p class="text-gray-500 font-medium tracking-wide" data-i18n="port_sub">Qualità che parla da sola.</p>
-                </div>
-                <div class="hidden md:block w-32 h-[2px] bg-xmas-red"></div>
-            </div>
+    <!-- PORTFOLIO -->
+    <section id="progetti" class="py-24 bg-brand-dark text-white relative">
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <h2 class="text-4xl font-display font-bold mb-16 text-center reveal">Lavori Recenti</h2>
 
-            <div class="space-y-24 md:space-y-32">
-                <!-- Project 1 -->
-                <a href="https://www.domenicoboccuzzi.com" target="_blank" class="block project-card group relative bg-white p-4 md:p-8 reveal">
-                    <div class="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
-                        <div class="md:col-span-8 overflow-hidden bg-gray-100 relative aspect-video shadow-lg border border-gray-200">
-                            <img src="https://ambasciatoridelgusto.it/wp-content/uploads/2023/07/Boccuzzi-Domenico-10.2022-2-scaled-uai-1280x1707.jpg" alt="Domenico Boccuzzi" class="project-img w-full h-full object-cover object-top">
-                        </div>
-                        <div class="md:col-span-4">
-                            <span class="text-xmas-red font-bold text-xs uppercase tracking-[0.2em] mb-4 block">01 / Web Design</span>
-                            <h3 class="text-3xl md:text-5xl font-display font-bold text-xmas-dark mb-6 group-hover:text-xmas-red transition-colors">Domenico <br> Boccuzzi</h3>
-                            <p class="text-gray-500 text-base leading-relaxed mb-8" data-i18n="p1_desc">
-                                Sito web di lusso per un imprenditore  e Chef leader nel settore. Titolare di `Sapore Perfetto` a Conversano(Bari, Puglia). Strategia digitale per valorizzare la sua figura professionale.
-                            </p>
-                            <span class="inline-block border-b border-xmas-red pb-1 text-xs font-bold uppercase tracking-widest text-xmas-dark group-hover:text-xmas-red transition-all" data-i18n="view_site">Vedi il sito</span>
-                        </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <a href="https://www.domenicoboccuzzi.com" target="_blank" class="group relative overflow-hidden rounded-2xl aspect-video block reveal">
+                    <img src="https://ambasciatoridelgusto.it/wp-content/uploads/2023/07/Boccuzzi-Domenico-10.2022-2-scaled-uai-1280x1707.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" loading="lazy" alt="Domenico Boccuzzi">
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 to-transparent p-8">
+                        <p class="text-brand-gold text-xs font-bold uppercase tracking-widest mb-1">Web Design</p>
+                        <h3 class="text-2xl font-bold">Domenico Boccuzzi</h3>
                     </div>
                 </a>
 
-                <!-- Project 2 -->
-                <a href="https://www.luminariatravel.it" target="_blank" class="block project-card group relative bg-white p-4 md:p-8 reveal">
-                    <div class="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
-                        <div class="md:col-span-8 md:order-2 overflow-hidden bg-gray-100 relative aspect-video shadow-lg border border-gray-200">
-                            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Luminaria Travel" class="project-img w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
-                        </div>
-                        <div class="md:col-span-4 md:order-1 md:text-right">
-                            <span class="text-xmas-red font-bold text-xs uppercase tracking-[0.2em] mb-4 block">02 / Travel</span>
-                            <h3 class="text-3xl md:text-5xl font-display font-bold text-xmas-dark mb-6 group-hover:text-xmas-red transition-colors">Luminaria <br> Travel</h3>
-                            <p class="text-gray-500 text-base leading-relaxed mb-8" data-i18n="p2_desc">
-                                Restyling completo per un portale turistico pugliese. Ottimizzato per aumentare le prenotazioni.
-                            </p>
-                            <span class="inline-block border-b border-xmas-red pb-1 text-xs font-bold uppercase tracking-widest text-xmas-dark group-hover:text-xmas-red transition-all" data-i18n="view_site">Vedi il sito</span>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Project 3 -->
-                <a href="https://www.cucinaconmegraziellaeraffaele.it/" target="_blank" class="block project-card group relative bg-white p-4 md:p-8 reveal">
-                    <div class="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
-                        <div class="md:col-span-8 overflow-hidden bg-white relative aspect-video flex items-center justify-center p-12 shadow-lg border border-gray-100">
-                            <img src="https://www.cucinaconmegraziellaeraffaele.it/wp-content/uploads/2025/05/CUCINA-CON-ME-270-x-90-px.png" alt="Logo Design" class="project-img object-contain w-auto h-auto max-h-[80%]">
-                        </div>
-                        <div class="md:col-span-4">
-                            <span class="text-xmas-gold font-bold text-xs uppercase tracking-[0.2em] mb-4 block">03 / Branding</span>
-                            <h3 class="text-3xl md:text-5xl font-display font-bold text-xmas-dark mb-6 group-hover:text-xmas-red transition-colors">Cucina <br> con Me</h3>
-                            <p class="text-gray-500 text-base leading-relaxed mb-8" data-i18n="p3_desc">
-                                Rebranding e Logo Design per un food blog di successo. Identità visiva moderna per distinguersi.
-                            </p>
-                            <span class="inline-block border-b border-xmas-red pb-1 text-xs font-bold uppercase tracking-widest text-xmas-dark group-hover:text-xmas-red transition-all" data-i18n="view_blog">Vedi il Blog</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lab & Software (CV CREATOR) -->
-    <section id="lab" class="py-24 md:py-32 bg-xmas-dark relative border-t border-white/10 text-white">
-         <div class="container mx-auto px-6 md:px-12 max-w-[1600px] relative z-10">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-24 reveal">
-                <div>
-                    <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-2">Prodotti & Lab</h2>
-                    <p class="text-gray-400 font-light text-lg">Progetti proprietari e Web App.</p>
-                </div>
-            </div>
-
-            <!-- CV Creator Card -->
-            <div class="reveal">
-                <a href="https://nikitalorusso.it/" target="_blank" class="block group relative bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-xmas-gold/50 transition-all duration-500 flex flex-col md:flex-row shadow-2xl backdrop-blur-sm">
-                    <div class="md:w-1/2 aspect-video md:aspect-auto relative flex items-center justify-center p-12 bg-gradient-to-br from-gray-900 to-black order-1">
-                        <!-- Icona e decorazioni -->
-                        <div class="absolute inset-0 bg-xmas-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <i class="fas fa-gem text-8xl text-xmas-gold drop-shadow-lg group-hover:scale-110 transition-transform duration-500 relative z-10"></i>
-                    </div>
-                    
-                    <div class="md:w-1/2 p-12 flex flex-col justify-center order-2">
-                        <div class="flex items-center gap-4 mb-6">
-                            <h3 class="text-3xl font-display font-bold text-white group-hover:text-xmas-gold transition-colors">CV Creator</h3>
-                            <span class="px-3 py-1 bg-xmas-gold/20 text-xmas-gold rounded-full text-[10px] font-bold uppercase tracking-widest border border-xmas-gold/30">Web App</span>
-                        </div>
-                        <p class="text-gray-400 text-lg leading-relaxed mb-4">
-                            Applicazione web proprietaria per la creazione di curriculum professionali in tempo reale. Potrebbe avere qualche problema con alcuni Browser! Consigliato uso di Chrome!
-                        </p>
-                        
-                         <!-- Warning Box Ottimizzato -->
-                        <div class="bg-xmas-gold/10 border-l-2 border-xmas-gold p-4 mb-8 rounded-r">
-                             <p class="text-xs text-xmas-gold font-bold uppercase tracking-wider mb-1"><i class="fas fa-flask mr-2"></i> Versione Beta</p>
-                             <p class="text-xs text-gray-300">Ottimizzato per <strong>Google Chrome</strong>. In continuo aggiornamento. Contattaci in privato per un CV su misura personalizzato!</p>
-                        </div>
-
-                        <span class="text-xs font-bold text-white uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
-                            Prova l'Applicazione,
-                            <i class="fas fa-arrow-right text-xmas-gold"></i>
-                        </span>
+                <a href="https://www.cucinaconmegraziellaeraffaele.it/" target="_blank" class="group relative overflow-hidden rounded-2xl aspect-video block reveal delay-100 bg-white">
+                    <img src="https://www.cucinaconmegraziellaeraffaele.it/wp-content/uploads/2025/05/CUCINA-CON-ME-270-x-90-px.png" class="w-full h-full object-contain p-12 transition duration-700 group-hover:scale-110" loading="lazy" alt="Cucina con Me">
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 to-transparent p-8">
+                        <p class="text-brand-gold text-xs font-bold uppercase tracking-widest mb-1">Branding</p>
+                        <h3 class="text-2xl font-bold text-white">Cucina con Me</h3>
                     </div>
                 </a>
             </div>
@@ -408,216 +348,105 @@
     </section>
 
     <!-- CHI SONO -->
-    <section id="about" class="py-20 md:py-32 bg-white border-t border-gray-100">
-         <div class="container mx-auto px-6 md:px-12 max-w-6xl">
-            <div class="grid md:grid-cols-2 gap-16 items-center">
-                <div class="reveal">
-                    <span class="text-xmas-gold font-bold tracking-widest text-xs uppercase mb-4 block" data-i18n="about_title">Chi Sono</span>
-                    <h2 class="text-4xl md:text-6xl font-display font-bold text-xmas-dark mb-6">Creatività <span class="text-xmas-red">&</span> Codice</h2>
-                    <p class="text-lg text-gray-600 leading-relaxed mb-6 font-light" data-i18n="about_desc">
-                        Sono <strong>Nikita Lorusso</strong>. graphic e web designer a Conversano. Unisco una solida formazione in <strong>Informatica</strong> alla passione per il design e la comunicazione visiva. Creo siti web professionali, loghi, branding e grafiche per social media che aiutano aziende e attività a distinguersi in Puglia e in tutta Italia.
-                        Autore del libro <em>"Il Viaggio di Tim il Topolino"</em>, porto narrazione e tecnica in ogni progetto.
-                    </p>
-                    <!-- Link al libro Amazon -->
-                    <a href="https://www.amazon.it/stores/Nikita-Lorusso/author/B0DMK7SJM8" target="_blank" class="inline-flex items-center gap-2 text-xmas-red font-bold uppercase tracking-widest text-xs border-b border-xmas-red pb-1 hover:text-xmas-dark hover:border-xmas-dark transition-all mb-8">
-                        <i class="fab fa-amazon"></i> I Miei Libri su Amazon
+    <section id="about" class="py-24 bg-white border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-6 text-center reveal">
+            <h2 class="text-4xl font-display font-bold text-brand-dark mb-8">Chi è Nikita Lorusso?</h2>
+            <p class="text-lg text-gray-600 leading-relaxed font-light mb-10">
+                Non sono il solito "cugino che fa siti". Ho un background in <strong>Informatica</strong> (codice pulito, veloce, sicuro) e sono un <strong>Autore Pubblicato</strong> (comunicazione efficace, emozionale).
+                <br><br>
+                Questa combinazione è rara. Significa che il tuo sito non si romperà e che i testi convinceranno i clienti a comprare.
+            </p>
+            <div class="flex justify-center gap-4">
+                <span class="bg-gray-100 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest text-gray-600">Sviluppatore</span>
+                <span class="bg-gray-100 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest text-gray-600">Scrittore</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTATTI -->
+    <footer id="contatti" class="py-24 bg-brand-dark text-white relative">
+        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-16 relative z-10">
+            <div>
+                <h2 class="text-5xl font-display font-bold mb-6">Iniziamo?</h2>
+                <p class="text-gray-400 mb-8">Blocca lo sconto di Natale. Scrivimi ora.</p>
+                <div class="space-y-4">
+                    <a href="mailto:nikitalorusso68@gmail.com" class="flex items-center gap-3 text-lg hover:text-brand-gold transition-colors">
+                        <i class="far fa-envelope text-brand-red"></i> nikitalorusso68@gmail.com
                     </a>
+                    <a href="tel:+393347716561" class="flex items-center gap-3 text-lg hover:text-brand-gold transition-colors">
+                        <i class="fas fa-phone text-brand-red"></i> +39 334 771 6561
+                    </a>
+                </div>
+            </div>
 
-                    <p class="text-lg text-gray-600 leading-relaxed mb-8 font-light" data-i18n="about_desc2">
-                        Non sono solo un esecutore: sono il partner che ti guida dalla prima idea fino al sito online, con attenzione alla bellezza, alla funzionalità e al posizionamento. Ogni progetto è pensato per attrarre clienti e rafforzare la tua presenza online.
-                    </p>
-                    
-                    <div class="flex flex-wrap gap-4 mt-8">
-                        <span class="px-4 py-2 bg-gray-100 border border-gray-200 rounded-full text-xs font-bold text-gray-500 uppercase tracking-wide">Informatica</span>
-                        <span class="px-4 py-2 bg-gray-100 border border-gray-200 rounded-full text-xs font-bold text-gray-500 uppercase tracking-wide">Web Design</span>
-                        <span class="px-4 py-2 bg-gray-100 border border-gray-200 rounded-full text-xs font-bold text-gray-500 uppercase tracking-wide">Author</span>
-                    </div>
-                </div>
-                
-                <div class="reveal delay-100">
-                    <div class="bg-gray-50 p-8 md:p-12 rounded-lg border-l-4 border-xmas-red shadow-lg">
-                        <h3 class="text-2xl font-bold font-display text-xmas-dark mb-4" data-i18n="why_work_title">Perché Lavoro Così?</h3>
-                        <p class="text-gray-600 mb-6 text-sm leading-relaxed" data-i18n="why_work_desc">
-                            Credo che ogni imprenditore di Conversano e Bari meriti un'immagine digitale all'altezza dei suoi sogni. 
-                            Ho scelto la strada del freelance per garantire <strong>cura maniacale</strong>, <strong>velocità</strong> e <strong>prezzi onesti</strong>.
-                        </p>
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-full bg-xmas-red text-white flex items-center justify-center font-bold font-display text-xl">N</div>
-                            <div>
-                                <p class="text-sm font-bold text-xmas-dark uppercase">Nikita Lorusso</p>
-                                <p class="text-xs text-xmas-gold uppercase tracking-widest">Founder & Creative Dev</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-sm border border-white/10">
+                <form onsubmit="sendMail(event)" class="space-y-4">
+                    <input type="text" id="name" placeholder="Il tuo nome" required class="w-full bg-transparent border-b border-gray-600 p-3 text-white focus:border-brand-red outline-none">
+                    <input type="email" id="email" placeholder="La tua email" required class="w-full bg-transparent border-b border-gray-600 p-3 text-white focus:border-brand-red outline-none">
+                    <select id="service" class="w-full bg-transparent border-b border-gray-600 p-3 text-white focus:border-brand-red outline-none">
+                        <option class="text-black">Sito Web (-30%)</option>
+                        <option class="text-black">Grafica/Logo (-30%)</option>
+                        <option class="text-black">Altro</option>
+                    </select>
+                    <button type="submit" class="w-full bg-brand-red text-white font-bold uppercase tracking-widest py-4 rounded-full hover:bg-red-600 transition-all shadow-lg mt-4">
+                        Invia Richiesta
+                    </button>
+                </form>
             </div>
         </div>
-    </section>
-
-    <!-- Recensioni (Social Proof) -->
-    <section id="reviews" class="py-20 bg-white border-t border-gray-100">
-        <div class="container mx-auto px-6 max-w-6xl">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-3xl md:text-5xl font-display font-bold text-xmas-dark mb-6">Dicono di Me</h2>
-                <div class="flex justify-center gap-1 text-xmas-gold text-xl">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Luigi De Napoli -->
-                <div class="p-8 bg-gray-50 rounded-lg border border-gray-100 shadow-sm reveal hover:shadow-lg transition-all">
-                    <i class="fas fa-quote-left text-3xl text-gray-200 mb-4"></i>
-                    <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">"Ho avuto un’ottima esperienza. Si sono dimostrati professionali, disponibili e molto attenti. Il sito web è moderno, veloce e curato nei dettagli. Mi hanno seguito passo dopo passo anche dopo la consegna."</p>
-                    <p class="font-bold text-xmas-dark uppercase text-xs tracking-widest">- Luigi De Napoli</p>
-                </div>
-
-                <!-- Graziella -->
-                <div class="p-8 bg-white rounded-lg border border-gray-100 shadow-sm reveal hover:shadow-lg transition-all" style="transition-delay: 100ms;">
-                    <i class="fas fa-quote-left text-3xl text-gray-200 mb-4"></i>
-                    <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">"Ha realizzato il logo per il nostro blog Cucina con Me Graziella, intuendo subito i nostri gusti e riuscendo a realizzare subito quello che chiedevamo. Consigliato. Bravissimo."</p>
-                    <p class="font-bold text-xmas-dark uppercase text-xs tracking-widest">- Graziella (Cucina con Me)</p>
-                </div>
-                
-                <!-- Domenico -->
-                <div class="p-8 bg-white rounded-lg border border-gray-100 shadow-sm reveal hover:shadow-lg transition-all" style="transition-delay: 200ms;">
-                    <i class="fas fa-quote-left text-3xl text-gray-200 mb-4"></i>
-                    <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">"Un professionista che ascolta e propone soluzioni concrete. Il sito rispecchia perfettamente l'eleganza che volevo trasmettere per la mia attività."</p>
-                    <p class="font-bold text-xmas-dark uppercase text-xs tracking-widest">- Domenico Boccuzzi</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer / Contatti -->
-    <footer id="contatti" class="py-24 md:py-32 px-6 md:px-12 bg-xmas-dark text-white border-t-8 border-xmas-gold relative overflow-hidden">
-        <div class="container mx-auto px-6 max-w-6xl reveal relative z-10">
-            <div class="grid md:grid-cols-2 gap-16 lg:gap-24 items-start">
-                
-                <!-- Info -->
-                <div>
-                    <h2 class="text-4xl md:text-7xl font-display font-bold text-white mb-8 leading-none uppercase" data-i18n="contact_title">
-                        PROGETTIAMO <br> <span class="text-xmas-red">INSIEME IL 2026.</span>
-                    </h2>
-                    <p class="text-lg md:text-xl text-gray-400 mb-10 font-light leading-relaxed" data-i18n="contact_desc">
-                        Vuoi far crescere il tuo brand con siti web e grafiche professionali? Richiedi subito un preventivo su misura.
-                    </p>
-                    
-                    <div class="space-y-6">
-                        <a href="mailto:nikitalorusso68@gmail.com" class="flex items-center gap-4 text-lg md:text-xl font-bold text-white hover:text-xmas-red transition-colors break-all group">
-                            <span class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/20 flex items-center justify-center text-xmas-red group-hover:bg-xmas-red group-hover:text-white transition-all flex-shrink-0">
-                                <i class="far fa-envelope"></i>
-                            </span>
-                            nikitalorusso68@gmail.com
-                        </a>
-                        <a href="tel:+393347716561" class="flex items-center gap-4 text-lg md:text-xl font-bold text-white hover:text-xmas-red transition-colors group">
-                            <span class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/20 flex items-center justify-center text-xmas-red group-hover:bg-xmas-red group-hover:text-white transition-all flex-shrink-0">
-                                <i class="fas fa-phone-alt"></i>
-                            </span>
-                            +39 334 771 6561
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Modulo Mailto -->
-                <div class="bg-white/5 p-8 md:p-12 rounded-sm border border-white/10 shadow-2xl backdrop-blur-sm relative">
-                    <div class="absolute -top-6 -right-6 text-6xl text-xmas-red opacity-80 rotate-12">
-                        <i class="fas fa-gift"></i>
-                    </div>
-
-                    <form id="contactForm" class="space-y-6">
-                        <div>
-                            <label class="block text-xs uppercase tracking-widest text-gray-400 mb-2 font-bold" data-i18n="form_name">Il tuo Nome</label>
-                            <input type="text" id="name" required class="w-full bg-black/20 border border-white/20 rounded-sm px-4 py-4 text-white focus:border-xmas-red focus:bg-white/5 outline-none transition-colors">
-                        </div>
-                        <div>
-                            <label class="block text-xs uppercase tracking-widest text-gray-400 mb-2 font-bold" data-i18n="form_email">La tua Email</label>
-                            <input type="email" id="email" required class="w-full bg-black/20 border border-white/20 rounded-sm px-4 py-4 text-white focus:border-xmas-red focus:bg-white/5 outline-none transition-colors">
-                        </div>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-xs uppercase tracking-widest text-gray-400 mb-2 font-bold" data-i18n="form_budget">Budget</label>
-                                <select id="budget" class="w-full bg-black/20 border border-white/20 rounded-sm px-4 py-4 text-white focus:border-xmas-red focus:bg-white/5 outline-none appearance-none cursor-pointer">
-                                    <option class="text-black" value="< 100€">&lt; 100€ (Grafica)</option>
-                                    <option class="text-black" value="250€ - 500€">250€ - 500€</option>
-                                    <option class="text-black" value="500€ - 1000€">500€ - 1000€</option>
-                                    <option class="text-black" value="> 1000€">&gt; 1000€</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label class="block text-xs uppercase tracking-widest text-gray-400 mb-2 font-bold" data-i18n="form_service">Servizio</label>
-                                <select id="service" class="w-full bg-black/20 border border-white/20 rounded-sm px-4 py-4 text-white focus:border-xmas-red focus:bg-white/5 outline-none appearance-none cursor-pointer">
-                                    <option class="text-black" value="Sito Web">Sito Web</option>
-                                    <option class="text-black" value="Grafica/Logo">Grafica/Logo</option>
-                                    <option class="text-black" value="Altro">Altro</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block text-xs uppercase tracking-widest text-gray-400 mb-2 font-bold" data-i18n="form_msg">Messaggio</label>
-                            <textarea id="message" rows="4" required class="w-full bg-black/20 border border-white/20 rounded-sm px-4 py-4 text-white focus:border-xmas-red focus:bg-white/5 outline-none transition-colors"></textarea>
-                        </div>
-                        <button type="button" onclick="sendMail()" class="w-full bg-xmas-red text-white font-bold uppercase tracking-[0.15em] py-4 rounded-sm hover:bg-xmas-green transition-all duration-300 shadow-lg mt-2 text-sm flex items-center justify-center gap-2" data-i18n="form_btn">
-                            INVIA RICHIESTA
-                        </button>
-                    </form>
-                </div>
-            </div>
-            
-             <div class="mt-24 pt-8 border-t border-white/10 text-center text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500 gap-4">
-                <span>&copy; 2025 Nikita Lorusso.</span>
-                <span>Web & Graphic Design</span>
-            </div>
-        </div>
+        <div class="text-center mt-16 text-[10px] text-gray-500 uppercase tracking-widest">&copy; 2025 Nikita Lorusso</div>
     </footer>
 
-    <!-- WhatsApp Bubble -->
-    <a href="https://wa.me/393347716561" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center wa-float">
+    <!-- STICKY MOBILE BAR -->
+    <div class="lg:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-100 p-3 flex gap-3 z-50 shadow-[0_-5px_20px_rgba(0,0,0,0.05)] pb-safe">
+        <a href="tel:+393347716561" class="flex-1 bg-brand-dark text-white font-bold text-xs uppercase tracking-widest py-3 rounded-full flex items-center justify-center gap-2">
+            <i class="fas fa-phone"></i> Chiama
+        </a>
+        <a href="https://wa.me/393347716561" class="flex-1 bg-[#25D366] text-white font-bold text-xs uppercase tracking-widest py-3 rounded-full flex items-center justify-center gap-2">
+            <i class="fab fa-whatsapp"></i> Chat
+        </a>
+    </div>
+
+    <!-- WHATSAPP DESKTOP -->
+    <a href="https://wa.me/393347716561" target="_blank" class="hidden lg:flex fixed bottom-8 right-8 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full shadow-2xl items-center justify-center hover:scale-110 transition-transform hover:rotate-12">
         <i class="fab fa-whatsapp text-3xl"></i>
     </a>
 
     <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const menuClose = document.getElementById('menu-close');
-        const overlay = document.getElementById('mobile-menu-overlay');
+        // Scroll Navbar Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
 
-        function openMenu() {
-            overlay.classList.add('open');
-            document.body.style.overflow = 'hidden';
+        // Mobile Menu
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const isOpen = menu.style.opacity === '1';
+            menu.style.opacity = isOpen ? '0' : '1';
+            menu.style.pointerEvents = isOpen ? 'none' : 'all';
+            document.body.style.overflow = isOpen ? 'auto' : 'hidden';
         }
 
-        function closeMenu() {
-            overlay.classList.remove('open');
-            document.body.style.overflow = 'auto';
-        }
-
-        menuBtn.addEventListener('click', openMenu);
-        menuClose.addEventListener('click', closeMenu);
-        document.querySelectorAll('.mobile-link').forEach(link => link.addEventListener('click', closeMenu));
-
+        // Reveal Animations
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
+                if(entry.isIntersecting) {
                     entry.target.classList.add('active');
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.1 });
+        }, {threshold: 0.1});
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        function sendMail() {
+        // Mailto Logic
+        function sendMail(e) {
+            e.preventDefault();
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const service = document.getElementById('service').value;
-            const budget = document.getElementById('budget').value;
-            const message = document.getElementById('message').value;
-
-            if(!name || !email) { alert("Compila i campi richiesti."); return; }
-
-            const subject = `Richiesta Preventivo Natalizio: ${service} - da ${name}`;
-            const body = `Ciao Nikita,%0D%0A%0D%0AVorrei approfittare dell'offerta di Natale per un progetto di: ${service}.%0D%0A%0D%0ABudget: ${budget}%0D%0A%0D%0ADettagli:%0D%0A${message}%0D%0A%0D%0AContatti:%0D%0ANome: ${name}%0D%0AEmail: ${email}`;
-            
-            window.location.href = `mailto:nikitalorusso68@gmail.com?subject=${subject}&body=${body}`;
+            window.location.href = `mailto:nikitalorusso68@gmail.com?subject=Richiesta Preventivo: ${service}&body=Nome: ${name}%0D%0AEmail: ${email}`;
         }
     </script>
 </body>
