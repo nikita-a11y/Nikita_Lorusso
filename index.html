@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <link rel="stylesheet" href="style.css">
     <!-- SEO PER VENDERE: FOCUS SU FIDUCIA E RISULTATI -->
-    <title>Siti Web e Grafica Professionale | Graphic & Web Designer a Conversano</title>
+    <title> Graphic & Web Designer | Nikita Lorusso Design </title>
     <meta name="description" content="Realizzo siti web e grafiche professionali per aziende, attività e professionisti. Graphic e web designer a Conversano, lavoro con clienti in tutta Italia. Contattami.">
     <meta name="keywords" content="web designer professionale,graphic designer professionale,siti web per aziende,siti web per professionisti,creazione loghi aziendali,branding completo,grafiche per social media,cv professionale personalizzato,curriculum designer,landing page professionale,siti web responsive,design grafico per attività,identità visiva per aziende,portfolio digitale professionale,web design e branding,graphic design per social media,servizi web per professionisti,progetti grafici personalizzati,siti web moderni,realizzazione siti web professionali">
     <meta name="author" content="Nikita Lorusso">
@@ -18,7 +18,7 @@
     <!-- Open Graph -->
     <meta property="og:type" content="business.business">
     <meta property="og:url" content="https://www.nikitalorusso.com/">
-    <meta property="og:title" content="🎁 Il Regalo Natalizio per il tuo Business: -30% su Web & Grafica">
+    <meta property="og:title" content="🎁 Il Regalo Natalizio per il tuo Business: -30% su Web & Grafica ">
     <meta property="og:description" content="Siti web professionali, branding e grafica per aziende, ristoranti e attività in Puglia e in tutta Italia.">
     <meta property="og:image" content="Nikita_Lorusso_Design.jpeg">
 
@@ -27,7 +27,7 @@
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
-      "name": "Nikita Lorusso Digital Design",
+      "name": "Nikita Lorusso Design",
       "image": "https://www.nikitalorusso.com/logo.png",
       "@id": "https://www.nikitalorusso.com",
       "priceRange": "€€",
@@ -128,13 +128,6 @@
                 <a href="#lab" class="hover:text-xmas-red transition-colors" data-i18n="nav_lab">Software</a>
                 <a href="#about" class="hover:text-xmas-red transition-colors" data-i18n="nav_about">Chi Sono</a>
                 
-                <!-- Language -->
-                <div class="flex items-center gap-3 border-l border-gray-300 pl-6 ml-2">
-                    <button onclick="setLanguage('it')" class="lang-btn active text-xmas-red font-bold" id="btn-it">IT</button>
-                    <span class="text-gray-300">/</span>
-                    <button onclick="setLanguage('en')" class="lang-btn font-bold hover:text-xmas-red" id="btn-en">EN</button>
-                </div>
-            </div>
 
             <!-- CTA -->
             <a href="#contatti" class="hidden lg:inline-block px-8 py-2.5 bg-xmas-green text-white text-xs font-bold uppercase tracking-[0.15em] hover:bg-xmas-dark transition-all duration-300 shadow-lg transform hover:-translate-y-0.5 rounded-sm border border-xmas-gold/20">
@@ -625,65 +618,6 @@
             const body = `Ciao Nikita,%0D%0A%0D%0AVorrei approfittare dell'offerta di Natale per un progetto di: ${service}.%0D%0A%0D%0ABudget: ${budget}%0D%0A%0D%0ADettagli:%0D%0A${message}%0D%0A%0D%0AContatti:%0D%0ANome: ${name}%0D%0AEmail: ${email}`;
             
             window.location.href = `mailto:nikitalorusso68@gmail.com?subject=${subject}&body=${body}`;
-        }
-
-        // Language Logic (Partial for brevity, main structure intact)
-        const translations = {
-            it: {
-                nav_portfolio: "LAVORI", nav_services: "SERVIZI", nav_method: "METODO", nav_about: "CHI SONO", nav_contact: "CONTATTAMI", nav_cta: "Offerta Fine Anno", nav_lab: "SOFTWARE",
-                hero_tagline: "Web Design & Grafica • Conversano & Italia", hero_title_1: "Fatti un", hero_title_2: "Regalo.",
-                hero_desc: "Sono <strong>Nikita Lorusso</strong>. Il 2026 è alle porte. Preparati con un sito web veloce, una grafica professionale e una strategia per trovare clienti a <strong>Conversano, Bari e in tutta Italia</strong>.",
-                hero_cta1: "Vedi i Lavori", hero_cta2: "Preventivo Gratuito", role: "Visual Designer",
-                services_sub: "I Tuoi Regali", services_title: "Soluzioni per il 2026", services_desc: "Investi ora sulla tua immagine per partire avvantaggiato l'anno prossimo.",
-                s1_t: "Siti Web Vetrina", s1_d: "Siti web moderni, veloci e ottimizzati per smartphone.",
-                s2_t: "Grafica Pubblicitaria", s2_d: "Curo la tua immagine anche offline. Materiale promozionale professionale.",
-                s3_t: "Brand Identity", s3_d: "Il logo è il volto della tua azienda.",
-                port_title: "Casi Studio", port_sub: "Qualità che parla da sola.", view_site: "Visita il sito", view_blog: "Vedi il Blog",
-                p1_desc: "Personal branding e sito web per un imprenditore di successo.",
-                p2_desc: "Restyling completo per un portale turistico pugliese.",
-                p3_desc: "Realizzazione logo professionale.",
-                contact_title: "PROGETTIAMO <br> <span class='text-xmas-red'>IL 2026.</span>",
-                contact_desc: "Hai un'attività locale o un brand nazionale? Contattami per un preventivo gratuito.",
-                form_name: "Il tuo Nome", form_msg: "Messaggio", form_btn: "INVIA RICHIESTA", form_budget: "Budget",
-                about_title: "Chi Sono",
-                about_desc: "Sono <strong>Nikita Lorusso</strong>. Unisco una solida formazione in <strong>Informatica</strong> alla passione per il design e la scrittura creativa. Autore del libro <em>'Il Viaggio di Tim il Topolino'</em>, porto narrazione e tecnica in ogni progetto.",
-                about_desc2: "Non sono un semplice esecutore. Sono il partner che ti guida dalla prima idea alla messa online, con un occhio alla bellezza e uno alla funzionalità.",
-                why_work_title: "Perché Lavoro Così?",
-                why_work_desc: "Credo che ogni imprenditore di Conversano e Bari meriti un'immagine digitale all'altezza dei suoi sogni. Ho scelto la strada del freelance per garantire <strong>cura maniacale</strong>, <strong>velocità</strong> e <strong>prezzi onesti</strong>."
-            },
-            en: {
-                nav_portfolio: "WORKS", nav_services: "SERVICES", nav_method: "METHOD", nav_about: "ABOUT", nav_contact: "CONTACT", nav_cta: "New Year Offer", nav_lab: "SOFTWARE",
-                hero_tagline: "Web Design & Graphics • Italy Based", hero_title_1: "Give Your", hero_title_2: "Business the Best.",
-                hero_desc: "I am <strong>Nikita Lorusso</strong>. 2026 is coming. Get ready with a fast website, professional graphics and a strategy to find clients in <strong>Italy</strong>.",
-                hero_cta1: "See Works", hero_cta2: "Free Quote", role: "Visual Designer",
-                services_sub: "Your Gifts", services_title: "Solutions for 2026", services_desc: "Invest in your image now to get ahead next year.",
-                s1_t: "Showcase Websites", s1_d: "Modern, fast, and smartphone-optimized websites.",
-                s2_t: "Graphic Design", s2_d: "Offline image care.",
-                s3_t: "Brand Identity", s3_d: "The logo is the face of your company.",
-                port_title: "Case Studies", port_sub: "Quality speaks for itself.", view_site: "Visit site", view_blog: "View Blog",
-                p1_desc: "Personal branding and website for a successful entrepreneur.",
-                p2_desc: "Complete restyling for a tourist portal.",
-                p3_desc: "Professional logo creation.",
-                contact_title: "LET'S PLAN <br> <span class='text-xmas-red'>2026.</span>",
-                contact_desc: "Do you have a project? Contact me.",
-                form_name: "Name", form_msg: "Message", form_btn: "SEND REQUEST", form_budget: "Budget",
-                about_title: "About Me",
-                about_desc: "I am <strong>Nikita Lorusso</strong>. I combine a solid background in <strong>Computer Science</strong> with a passion for design and creative writing. Author of the book <em>'Il Viaggio di Tim il Topolino'</em>, I bring storytelling and technique to every project.",
-                about_desc2: "I am not just an executor. I am the partner who guides you from the first idea to the online launch, with an eye for beauty and one for functionality.",
-                why_work_title: "Why Work This Way?",
-                why_work_desc: "I believe every entrepreneur deserves a digital image that matches their dreams. I chose the freelance path to guarantee <strong>maniacal care</strong>, <strong>speed</strong>, and <strong>fair prices</strong>."
-            }
-        };
-
-        function setLanguage(lang) {
-            document.querySelectorAll('[data-i18n]').forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                if(translations[lang][key]) el.innerHTML = translations[lang][key];
-            });
-            document.getElementById('btn-it').classList.toggle('text-xmas-red', lang === 'it');
-            document.getElementById('btn-en').classList.toggle('text-xmas-red', lang === 'en');
-            document.getElementById('mob-btn-it').classList.toggle('text-xmas-red', lang === 'it');
-            document.getElementById('mob-btn-en').classList.toggle('text-xmas-red', lang === 'en');
         }
     </script>
 </body>
