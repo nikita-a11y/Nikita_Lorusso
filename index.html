@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="it" class="scroll-smooth">
 <head>
+    <!-- 
+        COSTRUITO DA: Nikita Lorusso Digital Studio
+        VERSIONE: 5.1 (Project Status Update)
+        NOTE: Immagini ottimizzate e stati di progetto (WIP) aggiornati.
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     
-    <!-- SEO & PERFORMANCE -->
-    <title>Nikita Lorusso | Web Designer & Strategist | Bari & Italia</title>
-    <meta name="description" content="Il tuo sito non vende? Realizzo Siti Web Veloci e Brand Identity per Aziende che vogliono fatturare. Freelance a Conversano (Bari), operativo in tutta Italia. 5★ su Google. Preventivo in 24h.">
-    <meta name="keywords" content="Realizzazione siti web Bari, Web Designer Freelance Italia, Creazione Logo Professionale, Restyling Sito Web, Web Agency Conversano, Sviluppo Siti WordPress, Brand Identity Strategica, Preventivo Sito Web, Graphic Designer Puglia, Lead Generation, Siti Web Veloci, Nikita Lorusso">
+    <!-- SEO TITLES -->
+    <title>Nikita Lorusso | Sviluppo Web & Strategia | Conversano</title>
+    <meta name="description" content="Studio Web a Conversano. Gestione tecnica siti web, sviluppo App Mobile e strategie SEO. Valutato 5/5 su Google.">
+    
     <meta name="author" content="Nikita Lorusso">
-    <meta name="theme-color" content="#9F1239">
+    <meta name="theme-color" content="#1C1917">
 
-    <!-- JSON-LD -->
+    <!-- LOCAL BUSINESS SCHEMA -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebDesign",
-      "name": "Web & Graphic Design | Nikita Lorusso",
+      "@type": "ProfessionalService",
+      "name": "Nikita Lorusso Design",
       "image": "Nikita_Lorusso_Design.jpeg",
       "url": "https://www.nikitalorusso.com",
-      "sameAs": ["https://www.facebook.com/share/17w9iB9tBJ/"],
+      "telephone": "+393347716561",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Conversano",
         "addressRegion": "BA",
         "addressCountry": "IT"
       },
-      "priceRange": "€€",
-      "description": "Realizazzione Siti Web e Grafiche su misura a Conversano(Bari), operativo in tutta italia"
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "10"
+      },
+      "priceRange": "€€€"
     }
     </script>
 
-    <!-- FONTS PRELOAD -->
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -44,29 +53,17 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['"Inter"', 'sans-serif'],
-                        display: ['"Syne"', 'sans-serif'], 
-                        hand: ['"Reenie Beanie"', 'cursive'],
+                        sans: ['"Manrope"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
                     },
                     colors: {
-                        paper: '#F2F2F0', // Grigio carta chiarissimo, meno stancante del bianco assoluto
-                        ink: '#0F0F0F',   // Nero morbido
-                        accent: '#9F1239', // Rosso elegante
-                        surface: '#FFFFFF',
+                        bg: '#FAFAF9',
+                        ink: '#1C1917',
+                        accent: '#BE123C',
+                        gold: '#CA8A04'
                     },
                     animation: {
-                        'marquee': 'marquee 30s linear infinite',
-                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-                    },
-                    keyframes: {
-                        marquee: {
-                            '0%': { transform: 'translateX(0%)' },
-                            '100%': { transform: 'translateX(-100%)' },
-                        },
-                        fadeInUp: {
-                            '0%': { opacity: 0, transform: 'translateY(20px)' },
-                            '100%': { opacity: 1, transform: 'translateY(0)' },
-                        }
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                     }
                 }
             }
@@ -74,112 +71,90 @@
     </script>
 
     <style>
-        body { background-color: #F2F2F0; color: #0F0F0F; overflow-x: hidden; -webkit-tap-highlight-color: transparent; }
-        
-        /* Grana sottile per effetto "Premium" */
-        .noise-bg {
-            position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: 0.03;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E");
+        body { background-color: #FAFAF9; color: #1C1917; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+        .noise {
+            position: fixed; inset: 0; pointer-events: none; z-index: 0; opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E");
         }
-
-        /* Scroll Reveal CSS Only fallback / JS enhanced */
-        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 1s ease-out; }
         .reveal.active { opacity: 1; transform: translateY(0); }
-
-        /* Input Styles */
-        .modern-input {
-            width: 100%; background: transparent; border-bottom: 2px solid #e5e7eb; padding: 1rem 0; 
-            font-size: 1rem; outline: none; transition: border-color 0.3s, padding 0.3s;
-        }
-        .modern-input:focus { border-color: #9F1239; padding-left: 10px; }
+        .mask-img { overflow: hidden; border-radius: 4px; }
+        .mask-img img { transition: transform 1.5s cubic-bezier(0.2, 1, 0.3, 1); }
+        .mask-img:hover img { transform: scale(1.05); }
+        .input-pro { background: transparent; border: none; border-bottom: 1px solid #d6d3d1; padding: 20px 0; width: 100%; font-size: 1.1rem; font-weight: 300; transition: border-color 0.4s; }
+        .input-pro:focus { border-color: #BE123C; outline: none; }
         
-        /* Hover Effects */
-        .hover-lift { transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
-        .hover-lift:hover { transform: translateY(-5px); }
+        /* Badge Status Styles */
+        .status-badge {
+            font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;
+            padding: 0.35rem 0.75rem; border-radius: 9999px;
+        }
+        .status-live { background-color: #1C1917; color: white; }
+        .status-wip { background-color: #BE123C; color: white; animation: pulse 2s infinite; }
     </style>
 </head>
 <body class="selection:bg-accent selection:text-white antialiased">
 
-    <div class="noise-bg"></div>
+    <div class="noise"></div>
 
     <!-- NAVBAR -->
-    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 py-4 transition-all duration-300 border-b border-transparent bg-paper/80 backdrop-blur-md">
-        <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-            <a href="#" class="text-xl md:text-2xl font-display font-bold tracking-tight z-50 text-ink">
-                NIKITA LORUSSO<span class="text-accent">.</span>
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 py-6 transition-all duration-500 border-b border-transparent bg-bg/80 backdrop-blur-md">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight z-50 relative group font-sans uppercase">
+                Nikita Lorusso<span class="text-accent">.</span>
             </a>
-
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center gap-8 lg:gap-12 text-sm font-bold uppercase tracking-widest text-gray-600">
-                <a href="#problem" class="hover:text-accent transition-colors">Perché Io</a>
-                <a href="#servizi" class="hover:text-accent transition-colors">Soluzioni</a>
-                <a href="#progetti" class="hover:text-accent transition-colors">Lavori</a>
-                <a href="#contatti" class="px-6 py-3 bg-ink text-white rounded-lg hover:bg-accent transition-all shadow-lg transform hover:-translate-y-1">
-                    Candidati
-                </a>
+            <div class="hidden md:flex items-center gap-12 text-xs font-bold uppercase tracking-[0.15em] text-gray-500">
+                <a href="#soluzioni" class="hover:text-ink transition-colors">Servizi</a>
+                <a href="#progetti" class="hover:text-ink transition-colors">Portfolio</a>
+                <a href="#contatti" class="px-8 py-3 bg-ink text-white rounded-sm hover:bg-accent transition-all duration-300">Richiedi Analisi</a>
             </div>
-
-            <!-- Mobile Trigger -->
-            <button onclick="toggleMenu()" class="md:hidden text-2xl z-50 text-ink p-2">
-                <i class="fas fa-bars"></i>
-            </button>
+            <button onclick="toggleMenu()" class="md:hidden text-2xl z-50 p-2"><i class="fas fa-bars"></i></button>
         </div>
     </nav>
 
-    <!-- MOBILE MENU -->
-    <div id="mobileMenu" class="fixed inset-0 bg-paper z-40 flex flex-col items-center justify-center gap-8 opacity-0 pointer-events-none transition-all duration-500 transform translate-y-10">
-        <a href="#problem" onclick="toggleMenu()" class="text-3xl font-display font-bold hover:text-accent transition-colors">Il Problema</a>
-        <a href="#servizi" onclick="toggleMenu()" class="text-3xl font-display font-bold hover:text-accent transition-colors">Servizi</a>
-        <a href="#progetti" onclick="toggleMenu()" class="text-3xl font-display font-bold hover:text-accent transition-colors">Portfolio</a>
-        <a href="#contatti" onclick="toggleMenu()" class="text-xl font-bold uppercase tracking-widest mt-8 border-b-2 border-accent pb-1">Contattami</a>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-[#FAFAF9] z-40 flex flex-col items-center justify-center gap-8 opacity-0 pointer-events-none transition-all duration-500 transform translate-y-10">
+        <a href="#soluzioni" onclick="toggleMenu()" class="text-4xl font-serif italic text-ink">Servizi</a>
+        <a href="#progetti" onclick="toggleMenu()" class="text-4xl font-serif italic text-ink">Portfolio</a>
+        <a href="#contatti" onclick="toggleMenu()" class="text-xl font-bold uppercase tracking-widest border-b-2 border-accent pb-1">Contattami</a>
     </div>
 
     <!-- HERO SECTION -->
-    <header class="min-h-screen flex items-center justify-center px-6 pt-28 pb-12 relative overflow-hidden">
-        <div class="max-w-7xl w-full grid lg:grid-cols-12 gap-12 lg:gap-20 items-center relative z-10">
-            
-            <div class="lg:col-span-7 reveal active text-center lg:text-left">
-                <div class="inline-flex items-center gap-2 bg-white border border-gray-200 px-4 py-2 rounded-full mb-8 shadow-sm">
-                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                    <span class="text-gray-500 font-bold text-[10px] uppercase tracking-widest">Nikita Lorusso Digital Studio</span>
+    <header class="min-h-screen flex items-center justify-center px-6 pt-32 pb-20 relative">
+        <div class="max-w-[1440px] w-full grid lg:grid-cols-12 gap-16 items-center relative z-10">
+            <div class="lg:col-span-8 reveal active">
+                
+                <!-- RATING BADGE -->
+                <div class="inline-flex items-center gap-4 mb-8 bg-white border border-gray-200 px-5 py-2 rounded-full shadow-sm cursor-pointer hover:border-ink transition-colors" onclick="window.open('https://share.google/4MW1HCYs6k8MDeewe', '_blank')">
+                    <div class="flex text-gold text-sm gap-1">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-ink border-l border-gray-200 pl-4">Eccellenza Verificata</span>
                 </div>
                 
-                <h1 class="text-5xl sm:text-6xl lg:text-8xl font-display font-bold leading-[0.95] mb-8 text-ink tracking-tight">
-                    Sviluppo Siti Web e Brand Identity <br class="hidden lg:block">
-                    per Aziende <br class="hidden lg:block">
-                    <span class="text-accent relative inline-block">
-                        in tutta Italia. 
-                        <svg class="absolute -bottom-2 left-0 w-full h-3 text-accent/20" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="3" fill="none"/></svg>
-                    </span>
+                <h1 class="text-6xl sm:text-7xl lg:text-[6rem] font-serif leading-[0.95] mb-8 text-ink tracking-tight">
+                    Design Sartoriale. <br>
+                    <span class="italic text-gray-400">Strategia</span> Digitale.
                 </h1>
 
-                <p class="text-lg md:text-xl text-gray-600 font-medium leading-relaxed max-w-xl mb-10 mx-auto lg:mx-0">
-                    Basta siti "vetrina" che nessuno guarda. Io progetto <strong>Siti Web</strong> e <strong>Brand Identity</strong> pensati per una sola cosa: convincere chi guarda a chiamarti.
+                <p class="text-xl text-gray-500 font-light leading-relaxed max-w-2xl mb-12">
+                    Creo siti web performanti e identità visive per aziende che non si accontentano. La qualità di una Web Agency internazionale, la cura di un artigiano di Conversano.
                 </p>
 
-                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <a href="#contatti" class="px-8 py-4 bg-accent text-white font-bold text-sm uppercase tracking-widest rounded-lg hover:bg-ink transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 w-full sm:w-auto text-center">
-                        Analisi Gratuita
-                    </a>
-                    <a href="#progetti" class="px-8 py-4 border-2 border-gray-200 text-ink font-bold text-sm uppercase tracking-widest rounded-lg hover:border-ink hover:bg-white transition-all w-full sm:w-auto text-center">
-                        Vedi Risultati
-                    </a>
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <a href="#contatti" class="px-10 py-5 bg-ink text-white font-bold text-xs uppercase tracking-[0.2em] rounded-sm hover:bg-accent transition-all text-center">Prenota una Call</a>
+                    <a href="#progetti" class="px-10 py-5 border border-gray-300 text-ink font-bold text-xs uppercase tracking-[0.2em] rounded-sm hover:border-ink transition-all text-center">Vedi i Casi Studio</a>
                 </div>
             </div>
 
-            <!-- Visual -->
-            <div class="lg:col-span-5 relative reveal delay-200 flex justify-center mt-8 lg:mt-0">
-                <div class="relative w-72 sm:w-80 md:w-96 aspect-[3/4] group">
-                    <!-- Ombra Colorata -->
-                    <div class="absolute inset-0 bg-accent transform translate-x-4 translate-y-4 rounded-2xl transition-transform group-hover:translate-x-2 group-hover:translate-y-2 opacity-20"></div>
-                    
-                    <div class="relative h-full w-full overflow-hidden rounded-2xl border border-gray-200 shadow-2xl bg-white">
-                        <img src="Nikita_Lorusso_Design.jpeg" alt="Nikita Lorusso Web Designer" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
-                        
-                        <!-- Etichetta -->
-                        <div class="absolute bottom-0 left-0 w-full bg-white/90 backdrop-blur p-4 border-t border-gray-100">
-                            <p class="font-hand text-2xl text-accent mb-0 leading-none">Nikita Lorusso</p>
-                            <p class="text-[10px] uppercase font-bold text-gray-400">Digital Strategist & Author</p>
+            <div class="lg:col-span-4 relative flex justify-center lg:justify-end reveal delay-200">
+                <div class="relative w-full max-w-sm aspect-[4/5] mask-img shadow-2xl group cursor-pointer" onclick="window.open('https://share.google/4MW1HCYs6k8MDeewe', '_blank')">
+                    <img src="Nikita_Lorusso_Design.jpeg" alt="Nikita Lorusso Web Designer Conversano" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 shadow-xl border border-gray-100 flex items-center gap-4">
+                        <div class="bg-blue-50 p-2 rounded-full"><i class="fab fa-google text-xl text-blue-600"></i></div>
+                        <div>
+                            <p class="text-2xl font-bold leading-none text-ink">5.0</p>
+                            <div class="text-[8px] text-gray-400 uppercase tracking-widest">Su Google Reviews</div>
                         </div>
                     </div>
                 </div>
@@ -187,300 +162,225 @@
         </div>
     </header>
 
-    <!-- MARQUEE (Social Proof) -->
-    <div class="py-12 border-y border-gray-200 bg-white overflow-hidden">
-        <div class="whitespace-nowrap animate-marquee flex gap-16 md:gap-32 text-4xl md:text-6xl font-display font-bold text-gray-200 select-none items-center">
-            <span>STRATEGIA</span> <span>★</span> <span>DESIGN</span> <span>★</span> <span>CODICE</span> <span>★</span> <span>VENDITE</span> <span>★</span> 
-            <span>STRATEGIA</span> <span>★</span> <span>DESIGN</span> <span>★</span> <span>CODICE</span> <span>★</span> <span>VENDITE</span> <span>★</span>
+    <!-- TRUST SECTION -->
+    <section id="chi-sono" class="py-24 bg-white border-y border-gray-100">
+        <div class="max-w-[1440px] mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="reveal relative h-[500px] mask-img shadow-xl order-2 md:order-1 group">
+                    <div class="absolute inset-0 bg-ink/10 group-hover:bg-transparent transition-all z-10"></div>
+                    <!-- FOTO CONVERSANO -->
+                    <img src="https://images.unsplash.com/photo-1548618826-6b22b4065646?q=80&w=2670&auto=format&fit=crop" alt="Conversano Centro Storico" class="w-full h-full object-cover">
+                    <div class="absolute top-6 left-6 bg-white px-4 py-2 shadow-lg z-20">
+                        <p class="text-xs font-bold uppercase tracking-widest text-ink flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-accent"></i> Conversano, BA
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reveal delay-100 order-1 md:order-2">
+                    <span class="text-accent font-bold uppercase tracking-widest text-xs mb-4 block">Digital Studio</span>
+                    <h2 class="text-4xl md:text-5xl font-serif text-ink mb-6">
+                        Radici a Conversano, <br>
+                        <span class="italic text-gray-400">Visione Globale.</span>
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Opero dal cuore della Puglia, ma i miei standard sono internazionali. I miei clienti mi scelgono perché ci metto la faccia.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                        Garanzia di assistenza diretta, zero ticket anonimi, e una strategia studiata per battere i competitor sia a livello locale che nazionale.
+                    </p>
+                    <a href="https://share.google/4MW1HCYs6k8MDeewe" target="_blank" class="inline-flex items-center gap-3 text-ink font-bold hover:text-accent transition-colors border-b border-gray-200 pb-1 hover:border-accent">
+                        Leggi cosa dicono i clienti <i class="fas fa-arrow-right -rotate-45"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK IN PROGRESS BAR -->
+    <div class="py-6 bg-ink border-b border-gray-800">
+        <div class="max-w-[1440px] mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-4 text-center">
+            <span class="inline-flex items-center gap-2 text-white/60 text-xs uppercase tracking-widest">
+                <span class="w-2 h-2 rounded-full bg-accent animate-pulse-slow"></span>
+                Coming Soon
+            </span>
+            <p class="text-white font-serif italic text-lg">
+                Prossimi rilasci: <span class="text-white font-sans not-italic font-bold ml-2">Sito Nicola Boccuzzi</span>
+            </p>
         </div>
     </div>
 
-    <!-- IL PROBLEMA -->
-    <section id="problem" class="py-24 md:py-32 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-16 items-center">
-                <div class="reveal">
-                    <p class="font-hand text-3xl text-accent mb-2">Parliamoci chiaro</p>
-                    <h2 class="text-4xl md:text-5xl font-display font-bold text-ink mb-6">Perché i tuoi clienti scelgono <span class="text-gray-400 line-through">gli altri</span>?</h2>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Il 90% dei siti web locali sono lenti, non si adattano al cellulare e hanno grafiche amatoriali. Questo trasmette sfiducia.
-                    </p>
-                    <p class="text-gray-600 mb-8 leading-relaxed">
-                        Se il tuo sito sembra vecchio, il cliente penserà che anche il tuo servizio  sia tale. Io risolvo questo problema creando un'immagine <strong>autorevole</strong> e <strong>moderna</strong>.
-                    </p>
-                    <div class="flex gap-4 text-sm font-bold text-ink">
-                        <span class="flex items-center gap-2"><i class="fas fa-check-circle text-accent"></i> Caricamento < 2s</span>
-                        <span class="flex items-center gap-2"><i class="fas fa-check-circle text-accent"></i> Mobile First</span>
-                    </div>
-                </div>
-                
-                <div class="grid gap-6 reveal delay-100">
-                    <div class="bg-paper p-8 rounded-xl border border-gray-100 hover:border-accent transition-colors hover-lift">
-                        <i class="fas fa-rocket text-2xl text-accent mb-4"></i>
-                        <h3 class="text-xl font-bold mb-2">Non ti trovano</h3>
-                        <p class="text-sm text-gray-500">Senza una SEO locale fatta bene, sei invisibile a chi cerca i tuoi servizi a Conversano e Bari.</p>
-                    </div>
-                    <div class="bg-paper p-8 rounded-xl border border-gray-100 hover:border-accent transition-colors hover-lift">
-                        <i class="fas fa-eye-slash text-2xl text-accent mb-4"></i>
-                        <h3 class="text-xl font-bold mb-2">Non ti ricordano</h3>
-                        <p class="text-sm text-gray-500">Un logo generico si dimentica in 2 secondi. Ti serve un Brand che rimanga impresso.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- I SERVIZI -->
-    <section id="servizi" class="py-24 md:py-32 bg-ink text-white relative">
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <div class="text-center mb-20 reveal">
-                <span class="text-accent font-bold uppercase tracking-widest text-xs">Le Soluzioni</span>
-                <h2 class="text-4xl md:text-6xl font-display font-bold mt-4">Cosa posso fare per te</h2>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition-all hover-lift group reveal">
-                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center text-white mb-6 text-xl">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4 font-display">Siti Web Custom</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                        Non uso template pronti che rallentano tutto. Creo da Zero su misura del cliente per garantirti velocità e sicurezza assoluta.
-                    </p>
-                    <ul class="text-xs font-bold uppercase tracking-widest text-gray-500 space-y-2 group-hover:text-white transition-colors">
-                        <li>• Siti per Ristoranti</li>
-                        <li>• Landing Page</li>
-                        <li>• Siti Aziendali</li>
-                        <li>• E-Commerce</li>
-                        <li>• Restayling Siti Web</li>
-                        <li>• Wordpress</li>
-                    </ul>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="bg-gradient-to-br from-accent/20 to-white/5 p-8 rounded-2xl border border-accent/30 hover:border-accent transition-all hover-lift group reveal delay-100">
-                    <div class="w-12 h-12 bg-white text-ink rounded-lg flex items-center justify-center mb-6 text-xl">
-                        <i class="fas fa-pen-nib"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4 font-display">Grafica & Brand Identity</h3>
-                    <p class="text-gray-300 text-sm leading-relaxed mb-6">
-                         Grafiche e materiali pubblicitari (biglietti, brochure, social, blog...) che urlano professionalità.
-                    </p>
-                    <ul class="text-xs font-bold uppercase tracking-widest text-gray-400 space-y-2 group-hover:text-white transition-colors">
-                        <li>• Grafiche Siti Web</li>
-                        <li>• Logo Design</li>
-                        <li>• Rebranding</li>
-                        <li>• Grafica Social</li>
-                        <li>• Curriculum</li>
-                        <li>• Menù per Bar, Ristoranti, Pizzerie...</li>
-                    </ul>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition-all hover-lift group reveal delay-200">
-                    <div class="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center text-white mb-6 text-xl">
-                        <i class="fas fa-search-dollar"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4 font-display">Strategia SEO</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                        Farti trovare su Google prima dei tuoi concorrenti. Ottimizzo i testi e la struttura per scalare la classifica.
-                    </p>
-                    <ul class="text-xs font-bold uppercase tracking-widest text-gray-500 space-y-2 group-hover:text-white transition-colors">
-                        <li>• Audit SEO</li>
-                        <li>• Copywriting</li>
-                        <li>• Local Business</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- PORTFOLIO -->
-    <section id="progetti" class="py-24 md:py-32 bg-paper">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-4xl md:text-6xl font-display font-bold mb-16 text-center text-ink reveal">I fatti contano più delle parole.</h2>
+    <section id="progetti" class="py-32 bg-[#F5F5F4]">
+        <div class="max-w-[1440px] mx-auto px-6">
+            <h2 class="text-4xl md:text-6xl font-serif mb-20 text-center reveal">Selezione Progetti</h2>
 
-            <div class="space-y-24">
-                <!-- Progetto 1 -->
-                <div class="grid md:grid-cols-2 gap-12 items-center reveal group">
-                    <a href="https://www.domenicoboccuzzi.com" target="_blank" class="block rounded-xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow relative aspect-[4/3]">
-                         <div class="absolute inset-0 bg-ink/10 group-hover:bg-transparent transition-colors z-10"></div>
-                        <img src="https://ambasciatoridelgusto.it/wp-content/uploads/2023/07/Boccuzzi-Domenico-10.2022-2-scaled-uai-1280x1707.jpg" class="w-full h-full object-cover transition duration-1000 group-hover:scale-105" alt="Domenico Boccuzzi Site">
-                    </a>
-                    <div>
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="w-2 h-2 rounded-full bg-accent"></span>
-                            <span class="text-xs font-bold uppercase tracking-widest text-gray-500">Web Design & Strategy</span>
-                        </div>
-                        <h3 class="text-3xl md:text-4xl font-display font-bold text-ink mb-6">Domenico Boccuzzi</h3>
-                        <p class="text-gray-600 mb-8 leading-relaxed">
-                            Un sito web immersivo per un Ambasciatore del Gusto. Abbiamo creato un'esperienza digitale che rispecchia l'eccellenza della sua cucina, migliorando la percezione del brand e attirando eventi di alto profilo.
-                        </p>
-                        <a href="https://www.domenicoboccuzzi.com" target="_blank" class="inline-block border-b-2 border-ink pb-1 font-bold text-sm uppercase hover:text-accent hover:border-accent transition-colors">Vedi Sito Live</a>
+            <div class="grid md:grid-cols-2 gap-x-12 gap-y-20">
+                
+                <!-- Project 1: Web & Strategy -->
+                <a href="https://www.domenicoboccuzzi.com" target="_blank" class="group reveal cursor-pointer">
+                    <div class="mask-img aspect-[4/3] mb-6 shadow-lg relative">
+                        <div class="absolute top-4 right-4 status-badge status-live z-20">Live</div>
+                        <img src="https://ambasciatoridelgusto.it/wp-content/uploads/2023/07/Boccuzzi-Domenico-10.2022-2-scaled-uai-1280x1707.jpg" alt="Domenico Boccuzzi Web Design" class="w-full h-full object-cover">
                     </div>
-                </div>
-
-                <!-- Progetto 2 -->
-                <div class="grid md:grid-cols-2 gap-12 items-center reveal group">
-                    <div class="order-2 md:order-1">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="w-2 h-2 rounded-full bg-accent"></span>
-                            <span class="text-xs font-bold uppercase tracking-widest text-gray-500">Logo & Rebranding</span>
+                    <div class="flex justify-between items-end border-b border-gray-300 pb-4 group-hover:border-ink transition-colors">
+                        <div>
+                            <p class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Web Design & Strategy</p>
+                            <h3 class="text-3xl font-serif text-ink">Domenico Boccuzzi</h3>
                         </div>
-                        <h3 class="text-3xl md:text-4xl font-display font-bold text-ink mb-6">Cucina con Me</h3>
-                        <p class="text-gray-600 mb-8 leading-relaxed">
-                            Da un'idea casalinga a un brand riconoscibile. Ho ridisegnato il logo e creato un'identità visiva che comunica calore, famiglia e professionalità, perfetta per i social media.
-                        </p>
-                        <a href="https://www.cucinaconmegraziellaeraffaele.it/" target="_blank" class="inline-block border-b-2 border-ink pb-1 font-bold text-sm uppercase hover:text-accent hover:border-accent transition-colors">Vedi Brand</a>
+                        <i class="fas fa-arrow-right -rotate-45 text-2xl group-hover:rotate-0 transition-transform duration-300"></i>
                     </div>
-                    <a href="https://www.cucinaconmegraziellaeraffaele.it/" target="_blank" class="order-1 md:order-2 block rounded-xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow relative aspect-[4/3] bg-white">
-                        <img src="https://www.cucinaconmegraziellaeraffaele.it/wp-content/uploads/2025/05/CUCINA-CON-ME-270-x-90-px.png" class="w-full h-full object-contain p-12 transition duration-1000 group-hover:scale-105" alt="Cucina con Me Logo">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+                </a>
 
-    <!-- AUTORE (Leva Psicologica) -->
-    <section id="autore" class="py-24 bg-[#EBE9E4]">
-        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-            <div class="reveal">
-                <p class="font-hand text-3xl text-accent mb-4">La differenza tra me e gli altri</p>
-                <h2 class="text-4xl font-display font-bold text-ink mb-6">
-                    "Scrivo Codice e<br> <span class="italic text-gray-500">Romanzi.</span>"
-                </h2>
-                <p class="text-gray-700 leading-relaxed mb-8">
-                    Come autore del thriller <strong>"La Colpa"</strong>, conosco l'arte di tenere incollata l'attenzione. 
-                    Un sito web è inutile se nessuno legge quello che c'è scritto. Io uso tecniche narrative per guidare l'utente fino all'acquisto.
-                </p>
-                <a href="https://www.amazon.it/Colpa-Nessuno-davvero-innocente/dp/B0G8HWS5TF" target="_blank" class="inline-flex items-center gap-2 font-bold uppercase text-xs tracking-widest text-ink hover:text-accent transition-colors border-b border-ink pb-1">
-                    Vedi il libro su Amazon <i class="fas fa-external-link-alt text-xs"></i>
+                <!-- Project 2: SAPORE PERFETTO (App in Sviluppo) -->
+                <a href="https://saporeperfetto.com/" target="_blank" class="group reveal delay-100 md:translate-y-20 cursor-pointer">
+                    <div class="mask-img aspect-[4/3] mb-6 shadow-lg bg-white relative flex items-center justify-center overflow-hidden">
+                        <!-- Badge "App In Sviluppo" -->
+                        <div class="absolute top-4 right-4 status-badge status-wip z-20 shadow-lg">
+                            App in Sviluppo
+                        </div>
+                        
+                        <!-- IMMAGINE SPECIFICA SAPORE PERFETTO -->
+                        <!-- 
+                             NOTA: Sostituisci questo URL con il link alla TUA immagine caricata.
+                             Uso un placeholder Food App molto professionale per ora.
+                        -->
+                        <img src="https://images.unsplash.com/photo-1543353071-087f9fb71db9?q=80&w=2574&auto=format&fit=crop" alt="App Sapore Perfetto UI" class="w-full h-full object-cover">
+                        
+                        <!-- Overlay Informativo -->
+                        <div class="absolute inset-0 bg-ink/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                             <p class="text-white font-bold uppercase tracking-widest text-sm border border-white px-6 py-2">Vedi Sito Web Attuale</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-end border-b border-gray-300 pb-4 group-hover:border-ink transition-colors">
+                        <div>
+                            <p class="text-xs font-bold uppercase tracking-widest text-accent mb-1">Tech Management & App Mobile</p>
+                            <h3 class="text-3xl font-serif text-ink">Sapore Perfetto</h3>
+                            <p class="text-xs text-gray-500 mt-2">Gestione sito attuale. App iOS/Android in fase di creazione.</p>
+                        </div>
+                        <i class="fas fa-arrow-right -rotate-45 text-2xl group-hover:rotate-0 transition-transform duration-300"></i>
+                    </div>
+                </a>
+
+                <!-- Project 3: Branding (Cucina con Me) -->
+                <a href="https://www.cucinaconmegraziellaeraffaele.it/" target="_blank" class="group reveal mt-12 md:mt-0 cursor-pointer">
+                    <div class="mask-img aspect-[4/3] mb-6 bg-white p-12 shadow-lg flex items-center justify-center relative">
+                        <div class="absolute top-4 right-4 status-badge status-live z-20">Live</div>
+                        <img src="https://www.cucinaconmegraziellaeraffaele.it/wp-content/uploads/2025/05/CUCINA-CON-ME-270-x-90-px.png" alt="Cucina con Me Logo Design" class="w-full object-contain">
+                    </div>
+                    <div class="flex justify-between items-end border-b border-gray-300 pb-4 group-hover:border-ink transition-colors">
+                        <div>
+                            <p class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Branding & Logo Identity</p>
+                            <h3 class="text-3xl font-serif text-ink">Cucina con Me</h3>
+                        </div>
+                        <i class="fas fa-arrow-right -rotate-45 text-2xl group-hover:rotate-0 transition-transform duration-300"></i>
+                    </div>
+                </a>
+
+                <!-- Project 4: SEO/Travel -->
+                <a href="https://luminariatravel.it" target="_blank" class="group reveal mt-12 md:mt-20 cursor-pointer">
+                    <div class="mask-img aspect-[4/3] mb-6 shadow-lg bg-gray-200 relative">
+                        <div class="absolute top-4 right-4 status-badge status-live z-20">Live</div>
+                        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=2574&auto=format&fit=crop" alt="Luminaria Travel Portal" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-between items-end border-b border-gray-300 pb-4 group-hover:border-ink transition-colors">
+                        <div>
+                            <p class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Portale Turistico & SEO</p>
+                            <h3 class="text-3xl font-serif text-ink">Luminaria Travel</h3>
+                        </div>
+                        <i class="fas fa-arrow-right -rotate-45 text-2xl group-hover:rotate-0 transition-transform duration-300"></i>
+                    </div>
                 </a>
             </div>
             
-            <div class="flex justify-center reveal delay-100">
-                <a href="https://www.amazon.it/Colpa-Nessuno-davvero-innocente/dp/B0G8HWS5TF" target="_blank" class="relative group transform hover:-rotate-2 transition-transform duration-500 w-64">
-                    <div class="aspect-[2/3] bg-ink rounded-r-md shadow-2xl flex flex-col justify-between p-6 text-center border-l-4 border-gray-700 border-white/10 border">
-                        <span class="text-white/50 text-[10px] tracking-[0.3em] uppercase mt-4">Thriller</span>
-                        <div>
-                            <h3 class="text-white font-serif text-4xl mb-2">LA COLPA</h3>
-                            <div class="w-12 h-[1px] bg-white/30 mx-auto my-2"></div>
-                            <p class="text-gray-400 text-[10px] italic">Nessuno è innocente</p>
-                        </div>
-                        <span class="text-white text-xs font-bold uppercase tracking-widest mb-4">Nikita Lorusso</span>
-                    </div>
+            <div class="text-center mt-32">
+                <a href="#contatti" class="inline-block border-b border-ink pb-1 font-bold uppercase tracking-widest hover:text-accent hover:border-accent transition-colors">
+                    Lavora con me
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- CONTATTI -->
-    <footer id="contatti" class="py-24 bg-white relative">
+    <!-- CONTACT FORM -->
+    <footer id="contatti" class="py-32 bg-ink text-white relative">
         <div class="max-w-4xl mx-auto px-6 relative z-10">
-            <div class="text-center mb-12 reveal">
-                <p class="font-hand text-4xl text-accent mb-2 transform -rotate-1">Ora tocca a te</p>
-                <h2 class="text-5xl md:text-7xl font-display font-bold text-ink mb-6">
-                    Raccontami la tua <br> <span class="text-gray-400 italic">Visione</span>.
+            <div class="text-center mb-20 reveal">
+                <span class="text-accent font-bold uppercase tracking-widest text-xs mb-4 block">Disponibilità Limitata</span>
+                <h2 class="text-5xl md:text-7xl font-serif mb-8">
+                    Hai un progetto <br> <span class="italic text-gray-500">ambizioso?</span>
                 </h2>
-                <p class="text-gray-500 max-w-lg mx-auto">
-                    Compila il modulo. Analizzerò la tua situazione e ti risponderò personalmente entro 24 ore con una strategia su misura.
+                <p class="text-gray-400 max-w-lg mx-auto text-lg font-light">
+                    Compila il modulo per candidare il tuo progetto. Ti contatterò personalmente entro 24 ore.
                 </p>
             </div>
 
-            <div class="bg-paper p-8 md:p-12 rounded-2xl border border-gray-200 shadow-xl reveal delay-100">
-                <form onsubmit="sendMail(event)" class="space-y-10">
-                    <div class="grid md:grid-cols-2 gap-10">
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Come ti chiami?</label>
-                            <input type="text" id="name" required class="input-line" placeholder="Mario Rossi">
+            <div class="reveal delay-100">
+                <form onsubmit="sendMail(event)" class="space-y-12">
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div class="group">
+                            <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-2 group-focus-within:text-white transition-colors">Il tuo Nome</label>
+                            <input type="text" id="name" required class="input-pro text-white border-gray-700 focus:border-white" placeholder="Mario Rossi">
                         </div>
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">La tua Email</label>
-                            <input type="email" id="email" required class="input-line" placeholder="mario@email.com">
+                        <div class="group">
+                            <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-2 group-focus-within:text-white transition-colors">Email Aziendale</label>
+                            <input type="email" id="email" required class="input-pro text-white border-gray-700 focus:border-white" placeholder="mario@azienda.it">
                         </div>
                     </div>
 
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">A cosa sei interessato?</label>
-                        <select id="service" class="input-line bg-transparent cursor-pointer">
-                            <option>Voglio un Sito Web Nuovo</option>
-                            <option>Logo & Identità Visiva</option>
-                            <option>Restyling Sito Esistente</option>
-                            <option>Consulenza Strategica</option>
+                    <div class="group">
+                        <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-2 group-focus-within:text-white transition-colors">Obiettivo Principale</label>
+                        <select id="service" class="input-pro text-white border-gray-700 focus:border-white bg-transparent cursor-pointer">
+                            <option class="text-black" value="Sito Web">Voglio un Sito Web Professionale</option>
+                            <option class="text-black" value="App Mobile">Sviluppo App Mobile</option>
+                            <option class="text-black" value="Branding">Logo & Brand Identity</option>
+                            <option class="text-black" value="SEO">Posizionamento su Google</option>
                         </select>
                     </div>
 
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Parlami del tuo progetto</label>
-                        <textarea id="message" rows="3" class="input-line" placeholder="Ho bisogno di..."></textarea>
+                    <div class="group">
+                        <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-2 group-focus-within:text-white transition-colors">Dettagli Progetto</label>
+                        <textarea id="message" rows="2" class="input-pro text-white border-gray-700 focus:border-white resize-none" placeholder="Raccontami brevemente cosa vuoi realizzare..."></textarea>
                     </div>
 
-                    <button type="submit" class="w-full bg-ink text-white font-bold uppercase tracking-widest py-5 rounded-lg hover:bg-accent transition-all shadow-xl hover:shadow-2xl btn-fill text-lg">
-                        Invia Candidatura
-                    </button>
-                    <p class="text-[10px] text-gray-400 text-center mt-4">Cliccando verrai reindirizzato al tuo client mail.</p>
+                    <div class="text-center pt-10">
+                        <button type="submit" class="px-12 py-5 bg-white text-ink font-bold text-sm uppercase tracking-[0.2em] rounded-sm hover:bg-accent hover:text-white transition-all shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(190,18,60,0.4)]">
+                            Invia Candidatura
+                        </button>
+                    </div>
                 </form>
             </div>
 
-            <div class="mt-20 flex flex-col md:flex-row justify-between items-center gap-6 border-t border-gray-100 pt-10 text-gray-500">
-                <div class="flex gap-6">
-                    <a href="https://www.facebook.com/share/17w9iB9tBJ/" target="_blank" class="hover:text-blue-600 transition-colors"><i class="fab fa-facebook-f text-xl"></i></a>
-                    <a href="https://wa.me/393347716561" target="_blank" class="hover:text-green-600 transition-colors"><i class="fab fa-whatsapp text-xl"></i></a>
+            <div class="mt-32 border-t border-gray-800 pt-10 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-500 text-xs font-bold uppercase tracking-widest">
+                <div class="flex gap-8">
+                    <a href="https://share.google/4MW1HCYs6k8MDeewe" target="_blank" class="hover:text-white transition-colors flex items-center gap-2 group">
+                        <i class="fab fa-google text-lg text-white"></i> 
+                        <span class="group-hover:text-accent transition-colors">5/5 Recensioni</span>
+                    </a>
+                    <a href="https://www.facebook.com/share/17w9iB9tBJ/" target="_blank" class="hover:text-white transition-colors flex items-center gap-2">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
                 </div>
-                <p class="text-xs uppercase tracking-widest">&copy; Nikita Lorusso Digital Studio - Web Design & Grafica. Sede a Conversano (BA), operiamo con clienti a Milano, Roma, Torino e in tutta Italia.</p>
-            
+                <p>&copy; 2025 Nikita Lorusso. Conversano.</p>
             </div>
         </div>
     </footer>
 
-    <!-- STICKY MOBILE BAR -->
-    <div class="lg:hidden fixed bottom-4 left-4 right-4 bg-ink/95 backdrop-blur-md text-white p-2 rounded-xl flex gap-3 z-50 shadow-2xl border border-white/10">
-        <a href="tel:+393347716561" class="flex-1 bg-white text-ink font-bold text-xs uppercase tracking-widest py-3 rounded-lg flex items-center justify-center gap-2">
-            <i class="fas fa-phone"></i> Chiama
-        </a>
-        <a href="https://wa.me/393347716561" class="flex-1 bg-[#25D366] text-white font-bold text-xs uppercase tracking-widest py-3 rounded-lg flex items-center justify-center gap-2">
-            <i class="fab fa-whatsapp text-lg"></i> Chat
-        </a>
-    </div>
-
-    <!-- WHATSAPP DESKTOP -->
-    <a href="https://wa.me/393347716561" target="_blank" class="hidden lg:flex fixed bottom-8 right-8 z-50 bg-[#25D366] text-white w-16 h-16 rounded-full shadow-2xl items-center justify-center hover:scale-110 transition-transform duration-300 group hover:rotate-12">
-        <i class="fab fa-whatsapp text-4xl"></i>
-    </a>
-
     <script>
-        // Navbar Scroll
         window.addEventListener('scroll', () => {
             const nav = document.getElementById('navbar');
             if (window.scrollY > 50) {
-                nav.classList.add('bg-paper/95', 'backdrop-blur-md', 'shadow-sm', 'py-3');
-                nav.classList.remove('py-6');
+                nav.classList.add('py-4', 'shadow-sm'); nav.classList.remove('py-6', 'border-transparent');
             } else {
-                nav.classList.remove('bg-paper/95', 'backdrop-blur-md', 'shadow-sm', 'py-3');
-                nav.classList.add('py-6');
+                nav.classList.remove('py-4', 'shadow-sm'); nav.classList.add('py-6', 'border-transparent');
             }
         });
-
-        // Mobile Menu
         function toggleMenu() {
             const menu = document.getElementById('mobileMenu');
             const isOpen = menu.style.opacity === '1';
-            
-            if(isOpen) {
-                menu.style.opacity = '0';
-                menu.style.pointerEvents = 'none';
-                menu.style.transform = 'translateY(10px)';
-                document.body.style.overflow = 'auto';
-            } else {
-                menu.style.opacity = '1';
-                menu.style.pointerEvents = 'all';
-                menu.style.transform = 'translateY(0)';
-                document.body.style.overflow = 'hidden';
-            }
+            menu.style.opacity = isOpen ? '0' : '1';
+            menu.style.pointerEvents = isOpen ? 'none' : 'all';
+            menu.style.transform = isOpen ? 'translateY(40px)' : 'translateY(0)';
         }
-
-       
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if(entry.isIntersecting) {
@@ -490,20 +390,17 @@
             });
         }, {threshold: 0.1});
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-        // Form 
         function sendMail(e) {
             e.preventDefault();
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const service = document.getElementById('service').value;
             const message = document.getElementById('message').value;
-
-            const subject = `🔥 NUOVO CLIENTE: ${name} - ${service}`;
-            const body = `Nome: ${name}%0D%0AEmail: ${email}%0D%0AServizio: ${service}%0D%0A%0D%0AMessaggio:%0D%0A${message}`;
-
+            const subject = `🔥 CANDIDATURA: ${name}`;
+            const body = `Nome: ${name}%0D%0AEmail: ${email}%0D%0ATipo: ${service}%0D%0A%0D%0ADettagli:%0D%0A${message}`;
             window.location.href = `mailto:nikitalorusso68@gmail.com?subject=${subject}&body=${body}`;
         }
     </script>
 </body>
 </html>
+
